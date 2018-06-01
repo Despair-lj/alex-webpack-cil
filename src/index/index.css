@@ -1,5 +1,12 @@
+@custom-media --viewport-medium (max-width: 100rem);
 :root {
     --blue: blue;
+}
+
+@media(--viewport-medium) {
+    body {
+        color: #12345678;
+    }
 }
 
 .logo {
@@ -24,6 +31,8 @@
 .foot {
     margin-top: 20px;
     text-align: center;
+    border: 1px solid;
+    color: #111;
 }
 
 span {
@@ -34,4 +43,15 @@ span {
 
 a {
     color: #8ED6FB;
+}
+
+::placeholder {
+    color: gray;
+}
+
+@media(width > 100px) {
+    span {
+        font-size: 30px;
+        font-family: system-ui;
+    }
 }
