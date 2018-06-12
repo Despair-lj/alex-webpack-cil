@@ -1,0 +1,417 @@
+<!--  -->
+<template>
+    <div class="landingzap">
+        <section class="first">
+            <h5>
+                <span></span>LANDINGZAP
+            </h5>
+            <h1>We Design Awesome Landing Pages That Will Blow The Minds Of Your Visitors</h1>
+            <h4>It takes 5 seconds for your website visitors to make an impression of you. We just want to make sure they say
+                'Wow!'
+            </h4>
+            <button>Get your landing page now</button>
+        </section>
+        <section class="second">
+            <ul>
+                <li>
+                    <div class="left">
+                        <h5>WE DESIGN LANDING PAGES THAT</h5>
+                        <h4>Boost Your Revenue</h4>
+                        <p>Grab their attention! Your landing page will have a clear, concise action that your visitors will
+                            take, which will eventually turn them into customers and grow your revenue.</p>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <h5>WE DESIGN LANDING PAGES THAT</h5>
+                        <h4>Boost Your Revenue</h4>
+                        <p>Grab their attention! Your landing page will have a clear, concise action that your visitors will
+                            take, which will eventually turn them into customers and grow your revenue.</p>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <h5>WE DESIGN LANDING PAGES THAT</h5>
+                        <h4>Boost Your Revenue</h4>
+                        <p>Grab their attention! Your landing page will have a clear, concise action that your visitors will
+                            take, which will eventually turn them into customers and grow your revenue.</p>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="third">
+            <div class="top">
+            </div>
+            <h4>Our Portfolio</h4>
+            <p>Grab their attention! Your landing page will have a clear, concise action that your visitors will take, which
+                will eventually turn them into customers and grow your revenue.</p>
+        </section>
+        <section class="fourth">
+            <h4>Work With Us If...</h4>
+            <div class="lists">
+                <div class="list">
+                    <div class="icon"></div>
+                    <h5>You want revenue</h5>
+                    <p> for your online business through great design.</p>
+                </div>
+                <div class="list">
+                    <div class="icon"></div>
+                    <h5>You want revenue</h5>
+                    <p> for your online business through great design.</p>
+                </div>
+                <div class="list">
+                    <div class="icon"></div>
+                    <h5>You want revenue</h5>
+                    <p> for your online business through great design.</p>
+                </div>
+                <div class="list">
+                    <div class="icon"></div>
+                    <h5>You want revenue</h5>
+                    <p> for your online business through great design.</p>
+                </div>
+                <div class="list">
+                    <div class="icon"></div>
+                    <h5>You want revenue</h5>
+                    <p> for your online business through great design.</p>
+                </div>
+            </div>
+            <button>Get your landing page now</button>
+        </section>
+        <section class="fifth">
+            <div class="icon"></div>
+            <h4>Testimonials</h4>
+            <div class="lists">
+                <button>x</button>
+                <div class="info">
+                    <div class="info-container">
+                        <p>‘Grab their attention! Your landing page will have a clear, concise action that your visitors will
+                            take, which will eventually turn them into customers and grow your revenue.’</p>
+                        <h5>MADALIN DUCA</h5>
+                        <div class="founder">Co-Founder at LandingZap</div>
+                        <div class="avatar"></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-container">
+                        <p>‘Grab their attention! Your landing page will have a clear, concise action that your visitors will
+                            take, which will eventually turn them into customers and grow your revenue.’</p>
+                        <h5>MADALIN DUCA</h5>
+                        <div class="founder">Co-Founder at LandingZap</div>
+                        <div class="avatar"></div>
+                    </div>
+                </div>
+                <button>x</button>
+            </div>
+        </section>
+        <section class="sixth">
+            <h2>Are You Ready To Get The Best Landing Page Design Ever?</h2>
+            <button>Get your landing page now</button>
+        </section>
+    </div>
+</template>
+
+<script>
+    export default {}
+</script>
+<style>
+    .landingzap {
+        & button {
+            height: 70px;
+            background: #8EA1FF;
+            border-radius: 35px;
+            padding: 0 50px;
+            border: none;
+            font-size: 18px;
+            text-align: center;
+        }
+        &>.first {
+            overflow: hidden;
+            height: 1080px;
+            background: #383838;
+            text-align: center;
+            color: #fff;
+            &>h5 {
+                font-size: 16px;
+                line-height: 42px;
+                margin-top: 60px;
+                &>span {
+                    margin-right: 12px;
+                    display: inline-block;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: #fff;
+                    vertical-align: -4px;
+                }
+            }
+            &>h1 {
+                margin: 90px 457px 0;
+                font-size: 64px;
+                line-height: 74px;
+            }
+            &>h4 {
+                font-size: 24px;
+                line-height: 38px;
+                margin: 40px 538px 0;
+                font-weight: lighter;
+            }
+            &>button {
+                margin: 38px 0 0;
+                width: 374px;
+                height: 70px;
+                border-radius: 35px;
+                border: none;
+                background: #FF7282FF;
+            }
+        }
+        &>.second {
+            background: #fff;
+            overflow: hidden;
+            &>ul {
+                margin: 150px 480px 0;
+                &>li {
+                    font-size: 0;
+                    &>.left,
+                    &>.right {
+                        display: inline-block;
+                        width: 46%;
+                        height: 367px;
+                    }
+                    --red: rgba(255, 107, 92, 1);
+                    &>.left {
+                        text-align: left;
+                        margin: 75px 0 200px;
+                        &>h5 {
+                            font-size: 14px;
+                            line-height: 42px;
+                            color: var(--red);
+                        }
+                        &>h4 {
+                            font-size: 36px;
+                            line-height: 42px;
+                            color: rgba(17, 17, 17, 1);
+                            &:after {
+                                content: '';
+                                display: block;
+                                margin: 29px 0 0;
+                                width: 54px;
+                                height: 3px;
+                                background: var(--red);
+                            }
+                        }
+                        &>p {
+                            margin: 31px 0 0;
+                            font-size: 17px;
+                            color: rgba(17, 17, 17, 1);
+                            line-height: 30px;
+                        }
+                    }
+                    &>.right {
+                        border-radius: 50%;
+                        background: rgba(129, 146, 254, 1);
+                        width: 367px;
+                        height: 367px;
+                        float: right;
+                    }
+                    &:nth-of-type(2) {
+                        &>.left {
+                            float: right;
+                        }
+                        &>.right {
+                            float: none;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+                }
+            }
+        }
+        &>.third {
+            background: rgba(255, 107, 92, 1);
+            color: #fff;
+            overflow: hidden;
+            text-align: center;
+            height: 863px;
+            &>.top {
+                width: 46px;
+                height: 42px;
+                background: #fff;
+                margin: 120px auto 0;
+            }
+            &>h4 {
+                margin: 23px 0 0;
+                font-size: 26px;
+                line-height: 42px;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 54px;
+                    height: 3px;
+                    background: rgba(255, 255, 255, 1);
+                    margin: 29px auto;
+                }
+            }
+            &>p {
+                font-size: 17px;
+                line-height: 30px;
+                margin: 0 580px;
+            }
+        }
+        &>.fourth {
+            overflow: hidden;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            &>h4 {
+                margin: 150px 0 60px;
+                font-size: 36px;
+                line-height: 42px;
+                color: rgba(17, 17, 17, 1);
+            }
+            &>.lists {
+                font-size: 0;
+                &>.list {
+                    display: inline-block;
+                    width: 212px;
+                    height: 238px;
+                    background: #fff;
+                    border-bottom: 5px solid;
+                    border-radius: 10px;
+                    color: rgba(129, 146, 255, 1);
+                    box-shadow: 7px 0px 33px rgba(34, 34, 34, 0.09);
+                    &>.icon {
+                        width: 60px;
+                        height: 60px;
+                        margin: 40px auto 30px;
+                        background: cornflowerblue;
+                    }
+                    &>h5 {
+                        font-size: 14px;
+                        font-weight: lighter;
+                        line-height: 24px;
+                        color: rgb(17, 17, 17)
+                    }
+                    &>p {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #999;
+                    }
+                    &+.list {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            &>button {
+                display: inline-block;
+                background: #7282FF;
+                height: 70px;
+                width: 374px;
+                margin: 65px auto;
+                border: none;
+                border-radius: 35px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+        &>.fifth {
+            overflow: hidden;
+            height: 687px;
+            background: rgba(254, 236, 238, 1);
+            text-align: center;
+            &>.icon {
+                margin: 120px auto 23px;
+                height: 46px;
+                width: 46px;
+                background: #FF6B5C;
+            }
+            &>h4 {
+                color: #111;
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &>.lists {
+                font-size: 0;
+                margin-top: 60px;
+                &>button {
+                    display: inline-block;
+                    background: #fff;
+                    border: none;
+                    border-radius: 50%;
+                    width: 68px;
+                    height: 68px;
+                    box-shadow: 28px 0px 42px rgba(16, 16, 16, 0.05);
+                    margin: 0 45px;
+                    padding: 0;
+                }
+                &>.info {
+                    position: relative;
+                    display: inline-block;
+                    background: #fff;
+                    width: 555px;
+                    vertical-align: middle;
+                    &>.info-container {
+                        padding: 50px 40px 40px;
+                        &>p {
+                            color: #111;
+                            font-size: 17px;
+                            font-weight: lighter;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-bottom: 54px;
+                        }
+                        &>h5 {
+                            font-size: 14px;
+                            line-height: 42px;
+                            color: #111;
+                            margin-bottom: 13px;
+                        }
+                        &>.founder {
+                            font-size: 15px;
+                            font-weight: lighter;
+                            color: rgba(255, 107, 92, 1);
+                            line-height: 30px;
+                        }
+                        &>.avatar {
+                            position: absolute;
+                            right: 0;
+                            bottom: 5px;
+                            background: cadetblue;
+                            border-radius: 50%;
+                        }
+                    }
+                    &+.info {
+                        margin-left: 20px;
+                    }
+                }
+
+            }
+        }
+        &>.sixth {
+            background: darkorchid;
+            height: 990px;
+            overflow: hidden;
+            &>h2 {
+                margin: 117px 450px 40px;
+                font-size: 64px;
+                line-height: 74px;
+                color: #fff;
+            }
+            &>button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+</style>

@@ -1,0 +1,664 @@
+<!-- laibas -->
+<template>
+    <div class="laibas">
+        <header>
+            <h2>Laibas</h2>
+            <nav>
+                <div class="list">SHOP</div>
+                <div class="list">RECIPIES</div>
+                <div class="list">NEWS</div>
+                <div class="list">ABOUT LAIBA'S</div>
+                <div class="list">CONTACT</div>
+            </nav>
+            <h1>Laibas</h1>
+            <h4>RESTAURANT & BAR</h4>
+        </header>
+        <section class="first">
+            <div class="first-container">
+                <div class="book box">
+                    <div class="book-info">
+                        <h4>Reservations</h4>
+                        <p>Call us now to book a tale in our restaurant. Calls must be in the same days as the reservation</p>
+                        <button>BOOK A TABLE</button>
+                    </div>
+                    <div class="book-bg"></div>
+                </div>
+                <div class="about box">
+                    <div class="about-bg"></div>
+                    <div class="about-info">
+                        <h4>About</h4>
+                        <p>Laibs’s Restaurant combines an inspired menu with a casually sophisticated setting in a historic
+                            downtown Excelsior main street building. Coalition is the creation of Chef Eli Wollenzien and
+                            reflects his passion for cooking with a diverse and inspired menu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <div class="second-background">
+                <h2>Our Specialities</h2>
+            </div>
+        </section>
+        <section class="first third">
+            <div class="first-container">
+                <div class="third-items">
+                    <div class="third-item">
+                        <h4>LASAGNA</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5>FROM $200</h5>
+                    </div>
+                    <div class="third-item"></div>
+                    <div class="third-item">
+                        <h4>PIZZA</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5>FROM $399</h5>
+                    </div>
+                    <div class="third-item"></div>
+                </div>
+                <div class="third-items">
+                    <div class="third-item"></div>
+                    <div class="third-item">
+                        <h4>LASAGNA</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5>FROM $200</h5>
+                    </div>
+                    <div class="third-item"></div>
+                    <div class="third-item">
+                        <h4>PIZZA</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5>FROM $399</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second fourth">
+            <div class="second-background">
+            </div>
+        </section>
+        <section class="fifth">
+            <div class="fifth-container">
+                <h4>Menu</h4>
+                <p>FOOD AND Appetizers</p>
+                <ul>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                </ul>
+                <p>FOOD AND Appetizers</p>
+                <ul>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                    <li>
+                        <div class="title">PIZZA MEXICANA</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula massa quis _____________________</div>
+                        <div class="score">$199</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="green-background"></div>
+        </section>
+        <section class="sixth">
+            <div class="sixth-container">
+                <h4>Locations</h4>
+                <ul>
+                    <li>
+                        <h5>Indiranagar</h5>
+                        <p>218, Double Rd,</p>
+                        <p>Near BDA Complex, Indiranagar</p>
+                        <h5>9402393493</h5>
+                        <div class="bg"></div>
+                    </li>
+                    <li>
+                        <h5>Indiranagar</h5>
+                        <p>218, Double Rd,</p>
+                        <p>Near BDA Complex, Indiranagar</p>
+                        <h5>9402393493</h5>
+                        <div class="bg"></div>
+                    </li>
+                </ul>
+            </div>
+            <h3>JOIN OUR EAT WELL, BE WELL CULTURE</h3>
+            <input type="text">
+            <button>SIGN ME UP</button>
+        </section>
+        <section class="seventh">
+            <div class="share">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+            <div class="menus">
+                <div class="menu">HOME</div>
+                <div class="menu">MENU</div>
+                <div class="menu">STORY</div>
+                <div class="menu">ABOUT</div>
+                <div class="menu">LOCATIONS</div>
+            </div>
+            <div class="items">
+                <div class="item">CONTACT</div>
+                <div class="item">BLOG</div>
+                <div class="item">CATERING</div>
+                <div class="item">DELIVERY</div>
+            </div>
+        </section>
+        <footer>
+            <p>HEALTHY MEXICAN FAST-CASUAL FOOD, CRAFTED WITH in india</p>
+            <p>&copy;ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+</template>
+
+<script>
+    export default {}
+</script>
+
+<style>
+    @font-face {
+        font-family: athena;
+        src: url(./AthenaoftheOcean.ttf);
+    }
+
+    .laibas {
+        font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+        --red: #fc4263;
+        --gray: #8a8a8a;
+        --orange: orange;
+        --blue: #1e90ff;
+        --lightGray: #f6f4f1;
+        --green: #DBEFE4;
+        &>header {
+            padding: 0 56px;
+            background: #333;
+            overflow: hidden;
+            color: #fff;
+            height: 1080px;
+            &>h2 {
+                font-family: athena;
+                font-size: 158px;
+                font-weight: lighter;
+                color: #fff;
+                margin-top: -40px;
+                display: inline-block;
+                height: 96px;
+            }
+            &>nav {
+                float: right;
+                margin-top: 80px;
+                font-size: 0;
+                color: #fff;
+                vertical-align: middle;
+                &>.list {
+                    display: inline-block;
+                    font-size: 24px;
+                    &+.list:before {
+                        content: '' !important;
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: 6px;
+                        height: 6px;
+                        background: #fff;
+                        margin: 0 30px;
+                        vertical-align: 5px;
+                    }
+                }
+                &:after {
+                    content: '';
+                    clear: both;
+                    display: table;
+                }
+            }
+            &>h1 {
+                font-family: athena;
+                font-size: 450px;
+                font-weight: lighter;
+                text-align: center;
+                margin: -60px 0;
+            }
+            &>h4 {
+                font-size: 93px;
+                text-align: center;
+                margin: 0;
+                font-weight: lighter;
+                letter-spacing: 25px;
+            }
+        }
+        &>section.first {
+            background: var(--lightGray);
+            position: relative;
+            height: 690px;
+            &>.first-container {
+                position: absolute;
+                top: -60px;
+                left: 136px;
+                right: 136px;
+                margin: auto;
+                &>div {
+                    height: 403px;
+                }
+                & h4 {
+                    font-family: athena;
+                    font-size: 168px;
+                    text-align: center;
+                    color: var(--red);
+                    margin: -40px 0 0;
+                    font-weight: lighter;
+                }
+                & p {
+                    font-size: 21px;
+                    text-align: center;
+                    margin: -20px 106px;
+                    color: var(--gray);
+                    line-height: 32px;
+                }
+                & button {
+                    color: var(--red);
+                    border: 2px solid;
+                    border-radius: 4px;
+                    text-align: center;
+                    height: 70px;
+                    margin: 0 auto;
+                }
+                .box {
+                    border-left: 630px solid #fff;
+                    &>div:first-child {
+                        float: left;
+                        margin-left: -630px;
+                        width: 630px;
+                    }
+                    &:after {
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+                }
+                &>.book {
+                    &>.book-info {
+                        background: #fff;
+                        text-align: center;
+                        &>button {
+                            margin: 33px 0 0;
+                            width: 318px;
+                        }
+                    }
+                    &>.book-bg {
+                        height: 100%;
+                        background: var(--orange);
+                        background-size: 100% 100%;
+                    }
+                }
+                &>.about {
+                    &>.about-bg {
+                        background: var(--blue);
+                        background-size: 100% 100%;
+                        height: 100%;
+                    }
+                    &>.about-info {
+                        display: inline-block;
+                        height: 100%;
+                        text-align: center;
+                        background: #fff;
+                        &>h4 {
+                            margin-top: -30px;
+                        }
+                        &>p {
+                            margin: 0 76px;
+                        }
+                    }
+                }
+            }
+        }
+        &>section.second {
+            position: relative;
+            height: 980px;
+            color: #fff;
+            z-index: -1;
+            &>.second-background {
+                background: var(--gray);
+                background-size: 100% 100%;
+                height: 100%;
+                text-align: center;
+                position: relative;
+                &>h2 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 297px;
+                    font-family: athena;
+                    font-weight: lighter;
+                    margin: auto;
+                    width: 657px;
+                    height: 386px;
+                    line-height: 200px;
+                }
+            }
+        }
+        &>section.third {
+            text-align: center;
+            & .third-items {
+                height: 415px;
+                font-size: 0;
+                &>.third-item {
+                    display: inline-block;
+                    width: 25%;
+                    height: 100%;
+                    background: #fff;
+                    overflow: hidden;
+                    &>h4 {
+                        color: #000;
+                        font-size: 30px;
+                        margin: 97px 0 0;
+                    }
+                    &>p {
+                        font-size: 24px;
+                        margin: 41px 30px 0;
+                    }
+                    &>h5 {
+                        color: var(--red);
+                        font-size: 24px;
+                        margin: 0;
+                    }
+                    &:nth-of-type(2) {
+                        background: var(--orange);
+                    }
+                    &:nth-of-type(4) {
+                        background: var(--blue);
+                    }
+                }
+                &:nth-of-type(2) {
+                    &>.third-item {
+                        &:nth-of-type(2n) {
+                            background: #fff;
+                        }
+                        &:nth-of-type(1) {
+                            background: var(--orange);
+                        }
+                        &:nth-of-type(3) {
+                            background: var(--blue);
+                        }
+                    }
+                }
+
+            }
+        }
+        &>section.fifth {
+            position: relative;
+            &>.fifth-container {
+                margin: 0 213px;
+                padding-bottom: 350px;
+                text-align: center;
+                color: #000;
+                &>h4 {
+                    font-size: 210px;
+                    font-family: athena;
+                    font-weight: lighter;
+                    margin: 0;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 138px;
+                        height: 5px;
+                        background: var(--red);
+                        margin: -50px auto 0;
+                    }
+                }
+                &>p {
+                    font-size: 30px;
+                    margin: 68px 0 0;
+                    color: #878787;
+                    text-transform: uppercase;
+                }
+                &>ul {
+                    margin: 76px 0 0;
+                    font-size: 0;
+                    &>li {
+                        position: relative;
+                        display: inline-block;
+                        width: 46%;
+                        margin-bottom: 56px;
+                        &>.title {
+                            text-align: left;
+                            font-size: 27px;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                        &>.desc {
+                            margin: 20px 0 0;
+                            text-align: left;
+                            font-size: 18px;
+                            color: var(--gray);
+                            width: 486px;
+                        }
+                        &>.score {
+                            position: absolute;
+                            top: -10px;
+                            right: 0;
+                            font-size: 85px;
+                            color: var(--red);
+                        }
+                        &:nth-of-type(odd) {
+                            margin-right: 100px;
+                        }
+                    }
+                }
+            }
+            &>.green-background {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                z-index: -1;
+                background: var(--green);
+                clip-path: polygon(0px 0%, 0% 0px, 100% 100%, 0% 100%);
+            }
+        }
+        &>section.sixth {
+            background: rgba(0, 0, 0, 0.7);
+            position: relative;
+            &>.sixth-container {
+                position: absolute;
+                top: -60px;
+                left: 136px;
+                right: 136px;
+                margin: auto;
+                background: #fff;
+                text-align: center;
+                &>h4 {
+                    font-family: athena;
+                    font-size: 211px;
+                    font-weight: lighter;
+                    margin: 0 0 -40px;
+                    position: relative;
+                    &:after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        left: 160px;
+                        right: 0;
+                        bottom: 80px;
+                        width: 138px;
+                        height: 5px;
+                        margin: auto;
+                        border-radius: 3px;
+                        background: var(--red);
+                    }
+                }
+                &>ul {
+                    font-size: 0;
+                    margin: 0 30px;
+                    &>li {
+                        display: inline-block;
+                        width: 46%;
+                        &>h5,
+                        &>p {
+                            font-size: 30px;
+                            font-weight: bold;
+                            color: var(--gray);
+                        }
+                        &>p {
+                            font-weight: normal;
+                        }
+                        &>.bg {
+                            background: var(--blue);
+                            background-size: 100% 100%;
+                            height: 417px;
+                            margin-bottom: 30px;
+                        }
+                        &+li {
+                            margin-left: 8%;
+                        }
+                    }
+                }
+            }
+            &>h3 {
+                margin: 0 auto;
+                padding-top: 1200px;
+                font-size: 60px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                width: 957px;
+            }
+            &>input {
+                display: inline-block;
+                margin-top: 88px;
+                margin-left: 333px;
+                margin-right: 45px;
+                margin-bottom: 62px;
+                padding: 0;
+                width: 894px;
+                height: 96px;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 6px;
+                border: none;
+            }
+            &>button {
+                width: 315px;
+                height: 96px;
+                background: var(--red);
+                border-radius: 6px;
+                border: 1px solid var(--red);
+                color: #fff;
+            }
+        }
+        &>section.seventh {
+            background: var(--gray);
+            height: 450px;
+            text-align: center;
+            overflow: hidden;
+            &>.share {
+                margin-top: 130px;
+                font-size: 0;
+                &>.icon {
+                    display: inline-block;
+                    width: 66px;
+                    height: 66px;
+                    color: var(--red);
+                    background: #fff;
+                    border-radius: 50%;
+                    &+.icon {
+                        margin-left: 45px;
+                    }
+                }
+            }
+            &>.menus {
+                font-size: 0;
+                margin-top: 48px;
+                &>.menu {
+                    display: inline-block;
+                    font-size: 24px;
+                    color: #fff;
+                    text-tranform: uppercase;
+                    font-weight: bold;
+                    &+.menu {
+                        margin-left: 77px;
+                    }
+                }
+            }
+            &>.items {
+                font-size: 0;
+                margin-top: 38px;
+                &>.item {
+                    display: inline-block;
+                    font-size: 20px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    &+.item:before {
+                        content: '';
+                        display: inline-block;
+                        background: #fff;
+                        height: 15px;
+                        width: 2px;
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+        &>footer {
+            overflow: hidden;
+            text-align: center;
+            font-size: 20px;
+            background: #000;
+            height: 180px;
+            color: #fff;
+            p:nth-of-type(1) {
+                font-size: 26px;
+                margin: 46px 0 23px;
+            }
+        }
+    }
+</style>
