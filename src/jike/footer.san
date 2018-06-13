@@ -1,0 +1,264 @@
+<!-- footer -->
+<template>
+    <footer>
+        <div class="footer-container">
+            <dl>
+                <dt>
+                    <a href="#">极客学院</a>
+                </dt>
+                <dd>
+                    <a href="#">职业课程库</a>
+                </dd>
+                <dd>
+                    <a href="#">知识体系图</a>
+                </dd>
+                <dd>
+                    <a href="#">实战路径图</a>
+                </dd>
+                <dd>
+                    <a href="#">企业课程</a>
+                </dd>
+                <dd>
+                    <a href="#">资源下载</a>
+                </dd>
+                <dd>
+                    <a href="#">课程标签</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">极客学院</a>
+                </dt>
+                <dd>
+                    <a href="#">职业课程库</a>
+                </dd>
+                <dd>
+                    <a href="#">知识体系图</a>
+                </dd>
+                <dd>
+                    <a href="#">实战路径图</a>
+                </dd>
+                <dd>
+                    <a href="#">企业课程</a>
+                </dd>
+                <dd>
+                    <a href="#">资源下载</a>
+                </dd>
+                <dd>
+                    <a href="#">课程标签</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">极客学院</a>
+                </dt>
+                <dd>
+                    <a href="#">职业课程库</a>
+                </dd>
+                <dd>
+                    <a href="#">知识体系图</a>
+                </dd>
+                <dd>
+                    <a href="#">实战路径图</a>
+                </dd>
+                <dd>
+                    <a href="#">企业课程</a>
+                </dd>
+                <dd>
+                    <a href="#">资源下载</a>
+                </dd>
+                <dd>
+                    <a href="#">课程标签</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">极客学院</a>
+                </dt>
+                <dd>
+                    <a href="#">职业课程库</a>
+                </dd>
+                <dd>
+                    <a href="#">知识体系图</a>
+                </dd>
+                <dd>
+                    <a href="#">实战路径图</a>
+                </dd>
+                <dd>
+                    <a href="#">企业课程</a>
+                </dd>
+                <dd>
+                    <a href="#">资源下载</a>
+                </dd>
+                <dd>
+                    <a href="#">课程标签</a>
+                </dd>
+            </dl>
+            <div class="search">
+                <h4>极客学院，编程是一种信仰！</h4>
+                <a class="download" href="#">
+                    <h5>手机客户端</h5>
+                    <span>离线缓存 随时学习</span>
+                </a>
+                <div class="share">
+                    <a class="icon weibo" href="#"></a>
+                    <a class="icon tieba" href="#"></a>
+                    <a class="icon weixin" href="#"></a>
+                </div>
+                <a class="contact">
+                    <div class="icon"></div>
+                    <div class="right">
+                        <h5>联系我们</h5>
+                        <p>工作日9:00-21:00在线</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h5>Copyright &copy; 2013-2015 极客学院 jikexueyuan.com All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056</h5>
+    </footer>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
+<style>
+    footer {
+        &>.footer-container {
+            width: 1000px;
+            margin: 0 auto;
+            background: #fafafa;
+            border: 1px solid #e4e4e4;
+            font-size: 0;
+            &>dl {
+                display: inline-block;
+                padding: 30px 25px;
+                width: 135px;
+                &+dl {
+                    border-left: 1px solid #e4e4e4;
+                }
+                & a {
+                    text-decoration: none;
+                    color: #333;
+                }
+                &>dt {
+                    margin: 0;
+                    padding: 0 0 0 5px;
+                    font-size: 14px;
+                }
+                &>dd {
+                    margin: 10px 0 0;
+                    padding: 0 0 0 5px;
+                    font-size: 12px;
+                    &:before {
+                        content: ".";
+                        display: inline-block;
+                        height: 100%;
+                        line-height: 1;
+                        vertical-align: top;
+                    }
+                }
+            }
+            &>.search {
+                display: inline-block;
+                &>h4 {
+                    font-size: 15px;
+                    color: #35b558;
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                }
+                &>.download {
+                    display: block;
+                    padding-left: 30px;
+                    background-image: url(./img/iphone_ecb3977.png);
+                    background-repeat: no-repeat;
+                    background-size: 20px auto;
+                    background-position-y: 2px;
+                    text-decoration: none;
+                    color: #333;
+                    &:hover {
+                        color: #35b558
+                    }
+                    &>h5 {
+                        font-size: 16px;
+                    }
+                    &>span {
+                        font-size: 12px;
+                    }
+                }
+                &>.share {
+                    font-size: 0;
+                    margin-top: 15px;
+                    &>.icon {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        margin-right: 10px;
+                        background-image: url(./img/icon_7f8b929.png);
+                        background-position: 0px 0px;
+                        background-repeat: no-repeat;
+                        &.weibo {
+                            background-position: -23px 0px;
+                            &:hover {
+                                background-position: -23px -40px;
+                            }
+                        }
+                        &.tieba {
+                            background-position: -144px 0;
+                            &:hover {
+                                background-position: -144px -40px;
+                            }
+                        }
+                        &.weixin {
+                            background-position: -23px -82px;
+                            &:hover {
+                                background-position: -23px -122px;
+                            }
+                        }
+                    }
+                }
+                &>.contact {
+                    margin-top: 15px;
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                    cursor: pointer;
+                    &:hover {
+                        &>.icon {
+                            background-position: 0px 0px;
+                        }
+                        &>.right {
+                            color: #35b558;
+                        }
+                    }
+                    &>.icon {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(./img/kefu_8edc734.png);
+                        background-repeat: no-repeat;
+                        background-size: 80px 40px;
+                        background-position: -40px 0px;
+                    }
+                    &>.right {
+                        display: inline-block;
+                        margin-left: 15px;
+                        vertical-align: top;
+                        &>h5 {
+                            font-size: 16px;
+                        }
+                        &>p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &>h5 {
+            margin: 15px auto;
+            text-align: center;
+            color: #888;
+        }
+    }
+</style>

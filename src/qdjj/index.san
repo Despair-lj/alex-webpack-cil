@@ -1,0 +1,24 @@
+<!-- index -->
+<template>
+    <div class="index">
+        <m-header></m-header>
+        <main></main>
+    </div>
+</template>
+
+<script>
+    import mheader from './header.san';
+    import main from './main.san';
+    export default {
+        components: {
+            'm-header': mheader,
+            'main': main
+        }
+    }
+</script>
+<style>
+    .index {
+        padding: 8px 0 0;
+        background-color: rgb(13, 119, 146);
+    }
+</style>

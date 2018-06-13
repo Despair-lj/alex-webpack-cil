@@ -1,0 +1,658 @@
+<!--  -->
+<template>
+    <section class="main">
+        <img src="./bdlogo.png" alt="百度" class="logo">
+        <form action="#">
+            <div class="input-wrapper">
+                <input type="text">
+                <span class="mirco iconfont">&#xe740;</span>
+                <span class="phone iconfont">&#xe6a6;</span>
+                <div class="searchLists">
+                    <a href="#">jojo</a>
+                    <a href="#">stand</a>
+                    <a href="#">the world</a>
+                    <a href="#">wryyyyy</a>
+                </div>
+            </div>
+            <input type="submit" value="百度一下">
+        </form>
+        <div class="mainNav">
+            <div class="left">
+                <input type="radio" name="nav" id="leftNewNav" checked on-click="changeRightWrapper(0)">
+                <label for="leftNewNav">新闻</label>
+                <input type="radio" name="nav" id="leftNav" on-click="changeRightWrapper(1)">
+                <label for="leftNav">导航</label>
+                <a href="#" title="设置" class="setting">
+                    <span>设置</span>
+                </a>
+            </div>
+            <div class="right">
+                <div class="right-wrapper right-wrapper-1 right-wrapper-active">
+                    <div class="picNew">
+                        <div class="slider-wrapper">
+                            <div class="lists" s-ref="lists">
+                                <div class="slider">
+                                    <img src="./slider/1.jpg" alt="小区楼道深夜被涂满红'×' 似恐怖电影">
+                                    <p>小区楼道深夜被涂满红"×" 似恐怖电影</p>
+                                </div>
+                                <div class="slider">
+                                    <img src="./slider/2.jpg" alt="全世界最富有的1%拥有怎样的人生？">
+                                    <p>全世界最富有的1%拥有怎样的人生？</p>
+                                </div>
+                                <div class="slider">
+                                    <img src="./slider/3.jpg" alt="新疆官兵运物资 扛液化气罐翻山越岭">
+                                    <p>新疆官兵运物资 扛液化气罐翻山越岭</p>
+                                </div>
+                                <div class="slider">
+                                    <img src="./slider/4.jpg" alt="男子银行办业务 系统显示照片是小孩">
+                                    <p>男子银行办业务 系统显示照片是小孩</p>
+                                </div>
+                                <div class="slider">
+                                    <img src="./slider/5.jpg" alt="曼谷废弃机场成贫民窟">
+                                    <p>曼谷废弃机场成贫民窟</p>
+                                </div>
+                            </div>
+                            <div class="left button" on-click="goLeft">&#65308;</div>
+                            <div class="right button" on-click="goRight">&#65310;</div>
+                        </div>
+                        <div class="bottom-wrapper" s-ref="thumbnail" on-click="imgChange">
+                            <img src="./slider/11.jpg" alt="小区楼道深夜被涂满红'×' 似恐怖电影" class="active" data-index="0">
+                            <img src="./slider/22.jpg" alt="全世界最富有的1%拥有怎样的人生？" data-index="1">
+                            <img src="./slider/33.jpg" alt="新疆官兵运物资 扛液化气罐翻山越岭" data-index="2">
+                            <img src="./slider/44.jpg" alt="男子银行办业务 系统显示照片是小孩" data-index="3">
+                            <img src="./slider/55.jpg" alt="曼谷废弃机场成贫民窟" data-index="4">
+                        </div>
+                    </div>
+                    <div class="titleNew">
+                        <div class="top">
+                            <a class="bang" href="#">
+                                <span class="logo">logo</span>搜索风云榜</a>
+                            <a href="#" class="change">
+                                <span>change</span>换一换</a>
+                        </div>
+                        <ul class="newLists">
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                            <li>
+                                <a href="#">班长遭老师打</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-wrapper right-wrapper-2">
+                    <div class="title">
+                        <a href="#" title="我的导航" class="active">我的导航</a>
+                        <a href="#" title="推荐导航">推荐导航</a>
+                    </div>
+                    <div class="navigation">
+                        <div class="navigationName">
+                            <div class="name">综合</div>
+                            <div class="name">社区</div>
+                            <div class="name">购物</div>
+                            <div class="name">游戏</div>
+                            <div class="name">贴吧</div>
+                            <div class="name">图片</div>
+                            <div class="name">网站</div>
+                        </div>
+                        <div class="navigationInfo">
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                            <div class="navigationList">
+                                <a href="#" title="百度知道" class="icon1">百度知道</a>
+                                <a href="#" title="云端" class="icon2">云端</a>
+                                <a href="#" title="hao123" class="icon3">hao123</a>
+                                <a href="#" title="凤凰网" class="icon4">凤凰网</a>
+                                <a href="#" title="网易" class="icon5">网易</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+    const width = 425;
+    export default {
+        initData() {
+            return {
+                currentPage: 0
+            }
+        },
+        goLeft() {
+            const lists = this.ref('lists');
+            let currentPage = this.data.get('currentPage');
+            if (currentPage === 0) {
+                currentPage = 4;
+            } else {
+                currentPage -= 1;
+            }
+            lists.style.transform = `translate(${-currentPage * width}px, 0)`;
+            this.setImg(currentPage);
+            this.data.set('currentPage', currentPage);
+        },
+        goRight() {
+            const lists = this.ref('lists');
+            let currentPage = this.data.get('currentPage');
+            if (currentPage === 4) {
+                currentPage = 0;
+            } else {
+                currentPage += 1;
+            }
+            lists.style.transform = `translate(${-currentPage * width}px, 0)`;
+            this.setImg(currentPage);
+            this.data.set('currentPage', currentPage);
+        },
+        setImg(currentPage) {
+            const thumbnail = this.ref('thumbnail').querySelectorAll('img');
+            thumbnail.forEach(function (item) {
+                item.classList.remove('active');
+            });
+            thumbnail[currentPage].classList.add('active');
+        },
+        changeRightWrapper(num) {
+            const rightWrapper = document.querySelectorAll('.right-wrapper');
+            rightWrapper.forEach(function (item) {
+                item.classList.remove('right-wrapper-active');
+            });
+            rightWrapper[num].classList.add('right-wrapper-active');
+        },
+        imgChange(e) {
+            const lists = this.ref('lists');
+            const currentPage = parseInt(e.target.dataset.index);
+            lists.style.transform = `translate(${-currentPage * width}px, 0)`;
+            this.setImg(currentPage);
+            this.data.set('currentPage', currentPage);
+        }
+    }
+</script>
+<style>
+    section.main {
+        text-align: center;
+        margin: 100px 0;
+        &>.logo {
+            width: 270px;
+            height: 129px;
+        }
+        &>form {
+            margin: 22px auto 0;
+            width: 641px;
+            font-size: 0;
+            &>.input-wrapper {
+                display: inline-block;
+                border: 1px solid;
+                border-color: #b8b8b8 transparent #ccc #b8b8b8;
+                width: 539px;
+                height: 34px;
+                padding: 0;
+                text-align: left;
+                vertical-align: top;
+                &:hover {
+                    border-color: #999 transparent #b3b3b3 #999;
+                }
+                &>input[type="text"] {
+                    width: 460px;
+                    height: 32px;
+                    outline: 0;
+                    border: none;
+                    padding-left: 10px;
+                    &:focus~.searchLists {
+                        display: block;
+                    }
+                }
+                &>.iconfont {
+                    position: absolute;
+                    font-size: 20px;
+                    line-height: 1;
+                    color: #555;
+                    &:hover {
+                        color: #3385ff;
+                    }
+                }
+                &>.mirco {
+                    margin: 7px 0 0 10px;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        height: 14px;
+                        width: 0;
+                        border-left: 1px solid #e7e7e7;
+                        margin-left: 4px;
+                    }
+                }
+                &>.phone {
+                    margin: 7px 0 0 45px;
+                }
+                &>.searchLists {
+                    display: none;
+                    position: absolute;
+                    width: 538px;
+                    border: 1px solid #e6e8e9;
+                    background-color: #fff;
+                    z-index: 1;
+                    &>a {
+                        display: block;
+                        line-height: 36px;
+                        padding-left: 12px;
+                        color: #5e5e5e;
+                        text-decoration: none;
+                        font-size: 12px;
+                        &:hover {
+                            background: #eee;
+                        }
+                    }
+                }
+            }
+            &>input[type="submit"] {
+                display: inline-block;
+                width: 100px;
+                height: 36px;
+                color: #fff;
+                border: none;
+                font-size: 15px;
+                background: #3385ff;
+                cursor: pointer;
+                &:hover {
+                    background: #317ef3;
+                    box-shadow: 1px 1px 1px #ccc;
+                }
+            }
+        }
+        &>.mainNav {
+            font-size: 0;
+            width: 911px;
+            margin: 30px auto;
+            text-align: justify;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+            &>.left {
+                position: relative;
+                display: inline-block;
+                width: 80px;
+                height: 288px;
+                vertical-align: top;
+                background-color: #e9eaea;
+                &>input {
+                    display: none;
+                    &:checked+label {
+                        background-color: grey;
+                        color: #fff;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            margin: 12px 0px 0 14px;
+                            border: 5px solid transparent;
+                            border-right: 5px solid #fff;
+                        }
+                    }
+                }
+                &>label {
+                    display: block;
+                    font-size: 16px;
+                    height: 35px;
+                    line-height: 35px;
+                    color: grey;
+                    text-align: center;
+                    &:hover {
+                        color: #fff;
+                        background-color: #bfbfbf;
+                    }
+                }
+                &>.setting {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    &:hover {
+                        background-color: #bfbfbf;
+                        &>span {
+                            background-position: 0 0;
+                        }
+                    }
+                    &>span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: url(./noskin_bg_650ea825.png) no-repeat;
+                        background-position: -21px 0;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &>.right {
+                display: inline-block;
+                width: 814px;
+                height: 320px;
+                &>.right-wrapper {
+                    position: absolute;
+                    font-size: 0;
+                    display: none;
+                    &.right-wrapper-active {
+                        display: block;
+                    }
+                    &.right-wrapper-1 {
+                        &>.picNew {
+                            display: inline-block;
+                            &>.slider-wrapper {
+                                width: 425px;
+                                height: 260px;
+                                overflow: hidden;
+                                position: relative;
+                                &:hover>.button {
+                                    display: block;
+                                }
+                                &>.lists {
+                                    width: 2125px;
+                                    text-align: left;
+                                    transition: all 0.3s;
+                                    transition-property: transform;
+                                    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+                                    &>.slider {
+                                        display: inline-block;
+                                        position: relative;
+                                        &>p {
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            height: 30px;
+                                            line-height: 30px;
+                                            padding: 0 0 0 15px;
+                                            font-size: 15px;
+                                            color: #fff;
+                                            background-color: rgba(0, 0, 0, 0.3);
+                                        }
+                                    }
+                                }
+                                &>.left,
+                                &>.right {
+                                    position: absolute;
+                                    display: none;
+                                    top: 128.5px;
+                                    width: 30px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    background: rgba(0, 0, 0, .5);
+                                    cursor: pointer;
+                                    color: #eee;
+                                    font-size: 18px;
+                                }
+                                &>.right {
+                                    right: 0;
+                                }
+                            }
+                            &>.bottom-wrapper {
+                                width: 425px;
+                                height: 60px;
+                                line-height: 60px;
+                                background-color: #000;
+                                &>img {
+                                    display: inline-block;
+                                    width: 70px;
+                                    height: 42px;
+                                    vertical-align: middle;
+                                    margin-left: 13px;
+                                    opacity: 0.5;
+                                    cursor: pointer;
+                                    &.active {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                        &>.titleNew {
+                            display: inline-block;
+                            width: 389px;
+                            border: 1px solid #e9e9e9;
+                            vertical-align: top;
+                            &>.top {
+                                height: 52px;
+                                line-height: 52px;
+                                margin: 0 30px;
+                                border-bottom: 2px solid #e9e9e9;
+                                text-align: justify;
+                                &:after {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 100%;
+                                }
+                                &>a {
+                                    display: inline-block;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    text-decoration: none;
+                                    color: #333;
+                                    &.bang {
+                                        padding: 0 5px;
+                                        border-bottom: 2px solid #389cff;
+                                        &>.logo {
+                                            display: inline-block;
+                                            width: 20px;
+                                            height: 20px;
+                                            background: url(./news_all_b6796497.png) no-repeat;
+                                            background-position: -25px -90px;
+                                            font-size: 0;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                    &.change {
+                                        &:hover {
+                                            color: #0079f5;
+                                            &>span {
+                                                background-position: -90px 4px;
+                                            }
+                                        }
+                                        &>span {
+                                            display: inline-block;
+                                            width: 20px;
+                                            height: 20px;
+                                            background: url(./news_all_b6796497.png) no-repeat;
+                                            background-position: -19px -43px;
+                                            font-size: 0;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                }
+                            }
+                            &>.newLists {
+                                font-size: 0;
+                                margin: 12px 30px;
+                                &>li {
+                                    display: inline-block;
+                                    width: 50%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    &:before {
+                                        content: '';
+                                        display: inline-block;
+                                        border: 3px solid black;
+                                        border-radius: 50%;
+                                        vertical-align: 3px;
+                                        margin-right: 10px;
+                                    }
+                                    &:hover {
+                                        &>a {
+                                            color: #0079f5;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    &>a {
+                                        color: #333;
+                                        font-size: 16px;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.right-wrapper-2 {
+                        border: 1px solid #e9e9e9;
+                        width: 814px;
+                        &>.title {
+                            height: 45px;
+                            line-height: 45px;
+                            text-align: center;
+                            font-size: 0;
+                            border-bottom: 1px solid #e9e9e9;
+                            &>a {
+                                display: inline-block;
+                                color: #333;
+                                text-decoration: none;
+                                font-size: 16px;
+                                border-bottom: 2px solid;
+                                border-bottom-color: transparent;
+                                line-height: 44px;
+                                &.active {
+                                    font-weight: bold;
+                                    border-bottom-color: #389cff;
+                                }
+                            }
+                        }
+                        &>.navigation {
+                            &>.navigationName {
+                                position: absolute;
+                                width: 90px;
+                                &>.name {
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    height: 40px;
+                                    line-height: 40px;
+                                }
+                            }
+                            &>.navigationInfo {
+                                border-left: 90px solid transparent;
+                                &>.navigationList {
+                                    height: 39px;
+                                    line-height: 39px;
+                                    font-size: 0;
+                                    &+.navigationList {
+                                        border-top: 1px solid #e9e9e9;
+                                    }
+                                    &>a {
+                                        display: inline-block;
+                                        font-size: 14px;
+                                        padding-left: 20px;
+                                        padding-right: 50px;
+                                        text-align: left;
+                                        background-size: 16px 16px;
+                                        background-position: 0 11px;
+                                        background-repeat: no-repeat;
+                                        text-decoration: none;
+                                        color: #333;
+                                        &.icon1 {
+                                            background-image: url(./95491.png);
+                                        }
+                                        &.icon2 {
+                                            background-image: url(./10624.png);
+                                        }
+                                        &.icon3 {
+                                            background-image: url(./95490.png);
+                                        }
+                                        &.icon4 {
+                                            background-image: url(./95501.png);
+                                        }
+                                        &.icon5 {
+                                            background-image: url(./95504.png);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

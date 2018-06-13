@@ -1,0 +1,172 @@
+<!-- 3d -->
+<template>
+    <div class="threeD">
+        <div class="box">
+            <div class="blue box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="red box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="orange box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="green box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="grey box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="yellow box-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    .threeD {
+        position: relative;
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+        background: #eee;
+        border-radius: 20px;
+        transform: scale(0.7);
+        &>.box {
+            animation-name: BoxRotate;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transform-origin: 400px 400px 0;
+            transform-style: preserve-3d;
+            &>.box-wrapper {
+                position: absolute;
+                top: 235px;
+                left: 235px;
+                height: 330px;
+                width: 330px;
+                font-size: 0;
+                &>div {
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block;
+                    border: 5px solid rgba(170, 170, 170, 0.9);
+                }
+            }
+            &>.blue {
+                transform: rotateX(0deg) translateZ(165px);
+                display: block;
+                &>div {
+                    background-color: rgba(0, 0, 255, 0.8);
+                }
+            }
+            &>.red {
+                transform: rotateX(-90deg) translateZ(165px);
+                &>div {
+                    background-color: rgba(255, 0, 0, 0.8);
+                }
+            }
+            &>.green {
+                transform: rotateX(90deg) translateZ(165px);
+                &>div {
+                    background-color: rgba(0, 255, 0, 0.8);
+                }
+            }
+            &>.orange {
+                transform: rotateY(90deg) translateZ(165px);
+                &>div {
+                    background-color: rgba(255, 165, 0, 0.8);
+                }
+            }
+            &>.grey {
+                transform: rotateY(-90deg) translateZ(165px);
+                &>div {
+                    background-color: rgba(255, 255, 255, 0.8);
+                }
+            }
+            &>.yellow {
+                transform: translateZ(-165px);
+                &>div {
+                    background-color: rgba(255, 255, 0, 0.8);
+                }
+            }
+        }
+    }
+
+    @keyframes BoxRotate {
+        16% {
+            transform: rotateY(-90deg) rotateZ(135deg);
+        }
+        33% {
+            transform: rotateY(-90deg) rotateX(135deg);
+        }
+        50% {
+            transform: rotateY(225deg) rotateZ(135deg);
+        }
+        66% {
+            transform: rotateY(135deg) rotateX(135deg);
+        }
+        83% {
+            transform: rotateX(135deg)
+        }
+    }
+</style>

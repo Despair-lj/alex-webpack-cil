@@ -1,0 +1,67 @@
+<!-- findChar -->
+<template>
+    <div class="findChar">
+        <h1>2. 计算器</h1>
+        <p>目标： 开发简易计算器，输入 x y 以及操作符可以计算初数值，如函数计算器输入 4，5，* 可以返回20，输入3 ，8，+可以等于11。 注：此计算器还可进行.3(=0.3）、-3+3(=0)、.3*.4(=0.12)等操作，计算实时显示和错误提示~
+        </p>
+        <div class="bg">
+            <form action="#">
+                <input type="text" value="{= str =}">
+                <input type="submit" value="提交" on-click="findChar">
+            </form>
+            <p>
+                出现最多的字符是
+                <span>{{char}}</span> 出现了
+                <span>{{time}}</span>次
+            </p>
+            <p>每一个所在的顺序是{{position}}</p>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+  findChar(e) {
+    e.preventDefault()
+    const str = this.data.get('str').split('')
+    const obj = {}
+    let max = 0
+    let char = ''
+
+    str.map(function(item, index, array) {
+      if (obj.hasOwnProperty(item)) {
+        obj[item].push(index)
+      } else {
+        obj[item] = [index]
+      }
+    })
+
+    for (var o in obj) {
+      if (obj[o].length > max) {
+        max = obj[o].length
+        char = o
+      }
+    }
+
+    this.data.set('char', char)
+    this.data.set('time', max)
+    this.data.set('position', obj[char].join(','))
+  }
+}
+</script>
+
+<style>
+.findChar {
+  text-align: center;
+  h1 {
+    margin: 100px 0 0;
+  }
+  & > .bg {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: azure;
+    overflow: hidden;
+  }
+}
+</style>

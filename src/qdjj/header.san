@@ -1,0 +1,39 @@
+<!-- header -->
+<template>
+    <header>
+        <a href="#" class="logo">
+            <img src="./qdjjlogo.gif" alt="青岛家教网">
+        </a>
+        <nav>
+            <a href="#">注册</a>
+            <a href="#">登陆</a>
+            <a href="#">收藏本站</a>
+        </nav>
+    </header>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
+<style>
+    header {
+        width: 710px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 35px 35px 0 0;
+        &>.logo {
+            &>img {
+                margin: 2px 0 0 32px;
+            }
+        }
+        &>nav {
+            text-align: right;
+            margin-right: 10px;
+            &>a {
+                color: rgb(255, 0, 193);
+            }
+        }
+    }
+</style>

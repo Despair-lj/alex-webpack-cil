@@ -1,0 +1,167 @@
+<!-- score -->
+<template>
+    <div class="score">
+        <h2>十字架实现的第一种方式</h2>
+        <h4>使用inline-block + text-align方式</h4>
+        <div class="first-box">
+            <div class="top"></div>
+            <div class="middle">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+        <h2>十字架实现的第二种方式</h2>
+        <h4>使用position定位-absolute方式</h4>
+        <div class="second-box">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <h2>十字架实现的第三种方式</h2>
+        <h4>使用伸缩盒-Flexible Box方式</h4>
+        <div class="third-box">
+            <div class="top"></div>
+            <div class="middle">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+        <h2>十字架实现的第四种方式</h2>
+        <h4>使用伸缩盒-grid方式</h4>
+        <div class="fourth-box">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {}
+</script>
+<style>
+    .score {
+        text-align: center;
+        &>h2 {
+            font: 25px arial;
+            font-weight: bold;
+        }
+        &>h4 {
+            font-size: 15px;
+            color: #696969;
+        }
+        & .top,
+        & .left,
+        & .center,
+        & .right,
+        & .bottom {
+            background-color: rgb(204, 204, 204);
+            background-size: 100px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+        }
+        & .top {
+            background-image: url(./image/top.png);
+        }
+        & .left {
+            background-image: url(./image/left.png);
+        }
+        & .center {
+            background-image: url(./image/Robot.png);
+            background-size: 24px 24px;
+            background-position: center;
+            background-color: rgb(96, 180, 255);
+        }
+        & .right {
+            background-image: url(./image/right.png);
+        }
+        & .bottom {
+            background-image: url(./image/bottom.png);
+        }
+        &>.first-box {
+            font-size: 0;
+            &>.top,
+            &>.bottom {
+                display: inline-block;
+            }
+            &>.middle {
+                font-size: 0;
+                &>.left,
+                &>.center,
+                &>.right {
+                    display: inline-block;
+                }
+            }
+        }
+        &>.second-box {
+            position: relative;
+            height: 350px;
+            & .top,
+            & .left,
+            & .center,
+            & .right,
+            & .bottom {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            &>.left,
+            &>.center,
+            &>.right {
+                top: 100px;
+            }
+            &>.left {
+                left: -200px;
+            }
+            &>.right {
+                right: -200px;
+            }
+            &>.bottom {
+                top: 200px;
+            }
+        }
+        &>.third-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+            &>.middle {
+                display: flex;
+                flex-direction: row;
+            }
+
+        }
+        &>.fourth-box {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            width: 300px;
+            margin: 0 auto;
+            &>.top {
+                grid-column-start: 2;
+            }
+            &>.left,
+            &>.center,
+            &>.right {
+                grid-row-start: 2;
+            }
+            &>.bottom {
+                grid-column-start: 2;
+                grid-row-start: 3;
+            }
+        }
+    }
+</style>

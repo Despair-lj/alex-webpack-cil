@@ -1,0 +1,190 @@
+<!-- updateCalc -->
+<template>
+    <div class="update">
+        <h1>2. 计算器</h1>
+        <p>目标： 开发简易计算器，输入 x y 以及操作符可以计算初数值，如函数计算器输入 4，5，* 可以返回20，输入3 ，8，+可以等于11。 注：此计算器还可进行.3(=0.3）、-3+3(=0)、.3*.4(=0.12)等操作，计算实时显示和错误提示~
+        </p>
+        <div class="bg">
+            <div class="calcBody">
+                <h2>科学计算器</h2>
+                <input type="text" readonly class="result" value="{{result}}">
+                <div class="buttonLists">
+                    <div class="list">
+                        <button on-click="add('(')" class="method">(</button>
+                        <button on-click="add(')')" class="method">)</button>
+                        <button on-click="add('π')" class="method">π</button>
+                        <button on-click="add('e')" class="method">e</button>
+                        <button on-click="add('^(-1)')" class="newMethod">1/x</button>
+                        <button on-click="removeAll" class="clear">C</button>
+                        <button on-click="removeOne" class="clear">Del</button>
+                    </div>
+                    <div class="list">
+                        <button on-click="add(7)" class="num">7</button>
+                        <button on-click="add(8)" class="num">8</button>
+                        <button on-click="add(9)" class="num">9</button>
+                        <button on-click="add('+')" class="method">+</button>
+                        <button on-click="add('^2')" class="newMethod">X
+                            <sup>2</sup>
+                        </button>
+                        <button on-click="add('^3')" class="newMethod">X
+                            <sup>3</sup>
+                        </button>
+
+                        <button on-click="add('^')" class="newMethod">X
+                            <sup>y</sup>
+                        </button>
+                    </div>
+                    <div class="list">
+                        <button on-click="add(4)" class="num">4</button>
+                        <button on-click="add(5)" class="num">5</button>
+                        <button on-click="add(6)" class="num">6</button>
+                        <button on-click="add('-')" class="method">-</button>
+                        <button on-click="add('ln')" class="newMethod">ln</button>
+                        <button on-click="add('log')" class="newMethod">log</button>
+                        <button on-click="add('e^(')" class="newMethod">e
+                            <sup>x</sup>
+                        </button>
+                    </div>
+                    <div class="list">
+                        <button on-click="add(1)" class="num">1</button>
+                        <button on-click="add(2)" class="num">2</button>
+                        <button on-click="add(3)" class="num">3</button>
+                        <button on-click="add('*')" class="method">*</button>
+                        <button on-click="add('sin')" class="newMethod">sin</button>
+                        <button on-click="add('cos')" class="newMethod">cos</button>
+                    </div>
+                    <div class="list">
+                        <button on-click="add(0)" class="num">0</button>
+                        <button on-click="add('.')" class="num bigSize">.</button>
+                        <button on-click="add('/')" class="method">/</button>
+                        <button on-click="add('tan')" class="newMethod">tan</button>
+                        <button on-click="add('cot')" class="newMethod">cot</button>
+                        <button on-click="result" class="equal">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    const dataKey = {
+        value: 'value'
+    };
+    export default {
+        initData() {
+            return {
+                value: [0]
+            }
+        },
+        add(item) {
+            const value = this.data.get(dataKey.value);
+            const valueLength = value.length;
+            // 如果一开始输入
+            console.log(item);
+            if (valueLength === 1 && value[valueLength - 1] === 0) {
+                if (item === '(' || item === 'π' || item === 'e' || Number.isInteger(item)) {
+                    value.splice(0, 1, item);
+                } else if (item === ')') {
+
+                } else {
+
+                }
+            } else {
+
+            }
+            // value.push(item);
+            console.log(value);
+            this.data.set(dataKey.value, value);
+        }
+    }
+</script>
+<style>
+    .update {
+        text-align: center;
+        h1 {
+            margin: 100px 0 0;
+        }
+        &>.bg {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: azure;
+            overflow: hidden;
+            &>.calcBody {
+                margin: 0 auto;
+                padding: 0 15px;
+                width: 510px;
+                height: 485px;
+                border: 1px solid grey;
+                border-radius: 10px;
+                background-color: bisque;
+                box-shadow: 1px 1px 1px 1px grey;
+                &>h2 {
+                    font-size: 30px;
+                }
+                &>.result {
+                    width: 240px;
+                    height: 20px;
+                    margin-bottom: 10px;
+                    padding: 6px 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                    color: #555;
+                    background-color: #eee;
+                }
+                &>.buttonLists {
+                    position: relative;
+                    font-size: 0;
+                    &>.list {
+                        position: relative;
+                        text-align: left;
+                        &>button {
+                            display: inline-block;
+                            height: 60px;
+                            width: 60px;
+                            margin-bottom: 10px;
+                            padding: 0;
+                            font-size: 14px;
+                            text-align: center;
+                            border: 1px solid transparent;
+                            border-radius: 4px;
+                            box-shadow: 1px 1px 1px 1px grey;
+                            outline: none;
+                            cursor: pointer;
+                            &:not(:first-child) {
+                                margin-left: 14px;
+                            }
+                            &:active {
+                                box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                            }
+                            &.num {
+                                background-color: cornflowerblue;
+                            }
+                            &.method {
+                                background-color: deepskyblue;
+                            }
+                            &.newMethod {
+                                background-color: gold;
+                            }
+                            &.clear {
+                                background-color: crimson;
+                            }
+                            &.bigSize {
+                                width: 134px;
+                            }
+                            &.equal {
+                                position: absolute;
+                                right: 6px;
+                                bottom: 0;
+                                height: 130px;
+                                background-color: aquamarine;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

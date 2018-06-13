@@ -1,0 +1,289 @@
+<!-- calc -->
+<template>
+  <div class="calc">
+    <h1>2. 计算器</h1>
+    <p>目标： 开发简易计算器，输入 x y 以及操作符可以计算初数值，如函数计算器输入 4，5，* 可以返回20，输入3 ，8，+可以等于11。 注：此计算器还可进行.3(=0.3）、-3+3(=0)、.3*.4(=0.12)等操作，计算实时显示和错误提示~
+    </p>
+    <div class="bg">
+      <div class="calcBody">
+        <h2>简易计算器</h2>
+        <input type="text" readonly class="result" value="{{result}}">
+        <div class="buttonLists">
+          <button on-click="removeAll">C</button>
+          <button on-click="click('/')">/</button>
+          <button on-click="click('*')">*</button>
+          <button on-click="removeOne">Del</button>
+          <button on-click="click(7)">7</button>
+          <button on-click="click(8)">8</button>
+          <button on-click="click(9)">9</button>
+          <button on-click="click('-')">-</button>
+          <button on-click="click(4)">4</button>
+          <button on-click="click(5)">5</button>
+          <button on-click="click(6)">6</button>
+          <button class="hide">hide</button>
+          <button on-click="click(1)">1</button>
+          <button on-click="click(2)">2</button>
+          <button on-click="click(3)">3</button>
+          <button class="hide">hide</button>
+          <button on-click="click(0)">0</button>
+          <button on-click="click('.')">.</button>
+          <button on-click="getResult" class="equal">=</button>
+          <button on-click="click('+')" class="add">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    initData() {
+      return {
+        value: [],
+        result: ''
+      }
+    },
+    removeOne() {
+      const value = this.data.get('value')
+      value.pop()
+      this.data.set('value', value)
+      this.data.set('result', value.join(''))
+    },
+    removeAll() {
+      const value = this.data.get('value')
+      value.splice(0)
+      this.data.set('value', value)
+      this.data.set('result', value.join(''))
+    },
+    click(item) {
+      const value = this.data.get('value')
+      const valueLength = value.length
+
+      if (valueLength === 0) {
+        if (!Number.isInteger(item)) {
+          value.push(0)
+        }
+        value.push(item)
+      } else {
+        const lastValue = value[valueLength - 1]
+        // item是数字
+        if (Number.isInteger(item)) {
+          // lastValue不是数字
+          value.push(item)
+          // if (!Number.isInteger(lastValue)) {
+          //     value.push(item);
+          // } else {
+          //     const newValue = parseInt(`${lastValue}${item}`);
+          //     value.splice(valueLength - 1, 1, newValue);
+          // }
+        } else {
+          // item不是数字
+          // lastValue不是数字
+          if (!Number.isInteger(lastValue)) {
+            if (lastValue === '.') {
+              value.splice(valueLength - 1, 1, item)
+            } else {
+              // + - * /
+              if (item === '.') {
+                value.push(0)
+                value.push('.')
+              } else {
+                value.splice(valueLength - 1, 1, item)
+              }
+            }
+          } else {
+            if (item === '.') {
+              const reg = /[\+\-\*\/]/
+              const all = value.join('')
+              const splitInfo = all.split(reg)
+              const splitInfoLength = splitInfo.length
+              if (
+                splitInfoLength &&
+                ~splitInfo[splitInfoLength - 1].indexOf('.')
+              ) {
+                // 已经有.,不能再添加
+              } else {
+                value.push(item)
+              }
+            } else {
+              value.push(item)
+            }
+            // const newValue = parseInt(`${lastValue}${item}`);
+            // value.splice(valueLength - 1, 1, newValue);
+          }
+        }
+      }
+      console.log('value', value)
+      this.data.set('value', value)
+      this.data.set('result', value.join(''))
+    },
+    _dotCombine(value) {
+      let idx = value.indexOf('.')
+      while (~idx) {
+        if (idx < value.length - 1 && idx >= 1) {
+          const newNumber = parseFloat(
+            `${value[idx - 1]}${value[idx]}${value[idx + 1]}`
+          )
+          value.splice(idx - 1, 3, newNumber)
+          idx = value.indexOf('.')
+        } else {
+          break
+        }
+      }
+    },
+    _numberCombine(value) {
+      let i = 0
+      while (value.length - i > 0) {
+        if (Number.isInteger(value[i]) && Number.isInteger(value[i + 1])) {
+          const newNumber = value[i] * 10 + value[i + 1]
+          value.splice(i, 2, newNumber)
+        } else {
+          i += 1
+        }
+      }
+    },
+    _dotNumber(str) {
+      str += ''
+      const idx = str.indexOf('.')
+      let num = 0
+      if (~idx) {
+        num = str.split('.')[1].length
+      }
+      return num
+    },
+    _maxDotNumber(first, second) {
+      let firstDotNumber = this._dotNumber(first)
+      let secondDotNumber = this._dotNumber(second)
+      let maxNumber =
+        firstDotNumber > secondDotNumber ? firstDotNumber : secondDotNumber
+      return maxNumber
+    },
+    getResult() {
+      const value = this.data.get('value')
+      let valueLength = value.length
+      console.log('value1', value)
+      if (!Number.isInteger(value[valueLength - 1])) {
+        value.pop()
+        valueLength = value.length
+      }
+      // 数字合并
+      this._numberCombine(value)
+      // 小数点合并
+      this._dotCombine(value)
+      console.log(value)
+
+      while (~value.indexOf('*') || ~value.indexOf('/')) {
+        if (~value.indexOf('*')) {
+          let i = value.indexOf('*')
+          value[i - 1] = value[i - 1] * value[i + 1]
+          value.splice(i, 2)
+        } else {
+          let i = value.indexOf('/')
+          value[i - 1] = value[i - 1] / value[i + 1]
+          value.splice(i, 2)
+        }
+      }
+
+      while (~value.indexOf('+') || ~value.indexOf('-')) {
+        if (~value.indexOf('+')) {
+          let i = value.indexOf('+')
+          let firstNumber = value[i - 1]
+          let secondNumber = value[i + 1]
+          let maxNumber = this._maxDotNumber(firstNumber, secondNumber)
+
+          value[i - 1] = parseFloat(
+            (value[i - 1] + value[i + 1]).toFixed(maxNumber)
+          )
+          value.splice(i, 2)
+        } else {
+          let i = value.indexOf('-')
+          let firstNumber = value[i - 1]
+          let secondNumber = value[i + 1]
+          let maxNumber = this._maxDotNumber(firstNumber, secondNumber)
+          value[i - 1] = parseFloat(
+            (value[i - 1] - value[i + 1]).toFixed(maxNumber)
+          )
+          value.splice(i, 2)
+        }
+      }
+      this.data.set('value', [])
+      this.data.set('result', value.join(''))
+      // console.log('result', value)
+    }
+  }
+</script>
+<style>
+  .calc {
+    text-align: center;
+    h1 {
+      margin: 100px 0 0;
+    }
+    &>.bg {
+      width: 600px;
+      height: 600px;
+      margin: 0 auto;
+      background-color: azure;
+      overflow: hidden;
+      &>.calcBody {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 270px;
+        height: 485px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        background-color: bisque;
+        box-shadow: 1px 1px 1px 1px grey;
+        &>h2 {
+          font-size: 30px;
+        }
+        &>.result {
+          width: 240px;
+          height: 20px;
+          margin-bottom: 10px;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          color: #555;
+          background-color: #eee;
+        }
+        &>.buttonLists {
+          position: relative;
+          font-size: 0;
+          &>button {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            margin-bottom: 10px;
+            padding: 0;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            box-shadow: 1px 1px 1px 1px grey;
+            outline: none;
+            cursor: pointer;
+            &:not(:nth-of-type(4n + 1)) {
+              margin-left: 7px;
+            }
+            &:active {
+              box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            }
+            &.add {
+              position: absolute;
+              bottom: 70px;
+              right: 5px;
+              height: 130px;
+            }
+            &.equal {
+              width: 127px;
+            }
+            &.hide {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

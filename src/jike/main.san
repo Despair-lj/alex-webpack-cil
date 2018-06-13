@@ -1,0 +1,1378 @@
+<template>
+    <div class="main">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#">首页</a>
+                <a href="#">职业课程库</a>
+                <a href="#">知识体系图</a>
+                <a href="#">实战路径图</a>
+                <a href="#">技术问答</a>
+                <a href="#">Wiki</a>
+                <div class="right">
+                    <a href="#" class="vip">VIP会员</a>
+                    <a href="#" class="source">求课程</a>
+                    <a href="#" class="clients">客户端</a>
+                </div>
+            </div>
+        </nav>
+        <section class="pager">
+            <div class="lession">
+                <div class="lession-left">
+                    <ul class="lists">
+                        <li class="list">
+                            <a href="#">移动开发</a>
+                            <div class="lessionContainer">
+                                <h4>移动开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="移动开发">demo|demo</a>
+                                </div>
+                                <h4>移动开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="移动开发">demo|demo</a>
+                                </div>
+                                <h4>移动开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="移动开发">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">前端开发</a>
+                            <div class="lessionContainer">
+                                <h4>前端开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="前端开发">demo|demo</a>
+                                </div>
+                                <h4>前端开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="前端开发">demo|demo</a>
+                                </div>
+                                <h4>前端开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="前端开发">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">后段开发</a>
+                            <div class="lessionContainer">
+                                <h4>后段开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="后段开发">demo|demo</a>
+                                </div>
+                                <h4>后段开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="后段开发">demo|demo</a>
+                                </div>
+                                <h4>后段开发</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="后段开发">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">基础知识</a>
+                            <div class="lessionContainer">
+                                <h4>基础知识</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="基础知识">demo|demo</a>
+                                </div>
+                                <h4>基础知识</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="基础知识">demo|demo</a>
+                                </div>
+                                <h4>基础知识</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="基础知识">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">云计算&大数据</a>
+                            <div class="lessionContainer">
+                                <h4>云计算&大数据</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="云计算&大数据">demo|demo</a>
+                                </div>
+                                <h4>云计算&大数据</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="云计算&大数据">demo|demo</a>
+                                </div>
+                                <h4>云计算&大数据</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="云计算&大数据">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">智能硬件&物联网</a>
+                            <div class="lessionContainer">
+                                <h4>智能硬件&物联网</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="智能硬件&物联网">demo|demo</a>
+                                </div>
+                                <h4>智能硬件&物联网</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="智能硬件&物联网">demo|demo</a>
+                                </div>
+                                <h4>智能硬件&物联网</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="智能硬件&物联网">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">数据库</a>
+                            <div class="lessionContainer">
+                                <h4>数据库</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="数据库">demo|demo</a>
+                                </div>
+                                <h4>数据库</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="数据库">demo|demo</a>
+                                </div>
+                                <h4>数据库</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="数据库">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            <a href="#">认证考试</a>
+                            <div class="lessionContainer">
+                                <h4>认证考试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="认证考试">demo|demo</a>
+                                </div>
+                                <h4>认证考试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="认证考试">demo|demo</a>
+                                </div>
+                                <h4>认证考试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="认证考试">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list hide">
+                            <a href="#">企业IT</a>
+                            <div class="lessionContainer">
+                                <h4>企业IT</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="企业IT">demo|demo</a>
+                                </div>
+                                <h4>企业IT</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="企业IT">demo|demo</a>
+                                </div>
+                                <h4>企业IT</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="企业IT">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list hide">
+                            <a href="#">软件测试</a>
+                            <div class="lessionContainer">
+                                <h4>软件测试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="软件测试">demo|demo</a>
+                                </div>
+                                <h4>软件测试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="软件测试">demo|demo</a>
+                                </div>
+                                <h4>软件测试</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="软件测试">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list hide">
+                            <a href="#">设计产品</a>
+                            <div class="lessionContainer">
+                                <h4>设计产品</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="设计产品">demo|demo</a>
+                                </div>
+                                <h4>设计产品</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="设计产品">demo|demo</a>
+                                </div>
+                                <h4>设计产品</h4>
+                                <div class="containerLists">
+                                    <a class="containerList" href="#" title="设计产品">demo|demo</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="more"></div>
+                </div>
+                <div class="lession-middle">
+                    <div class="lession-middle-wrapper" s-ref="lessionMiddle">
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/6.jpg" alt="前端工程师">
+                        </a>
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/5.jpg" alt="前端工程师">
+                        </a>
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/4.jpg" alt="前端工程师">
+                        </a>
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/3.jpg" alt="前端工程师">
+                        </a>
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/2.jpg" alt="前端工程师">
+                        </a>
+                        <a href="#" title="前端工程师" class="wrapper-info">
+                            <img src="./img/slider/1.png" alt="前端工程师">
+                        </a>
+                    </div>
+                    <div class="left" on-click="goLessionMiddleLeft">&#65308;</div>
+                    <div class="right" on-click="goLessionMiddleRight">&#65310;</div>
+                    <div class="bottom-wrapper">
+                        <div class="list {{i === currentPage ? 'active' : ''}}" s-for="i in list" on-click="moveLession(i)"></div>
+                    </div>
+                </div>
+                <div class="lession-right">
+                    <div class="box">
+                        <div class="box-wrapper">
+                            <h4>极客学院让 学习更有效</h4>
+                            <div class="infos">
+                                <span>最新</span>
+                                <span>系统</span>
+                                <span>实战</span>
+                            </div>
+                            <button>了解极客学院</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-wrapper">
+                            <h4>成为VIP 极客启程</h4>
+                            <div class="infos">
+                                <div class="info">
+                                    <span>√全部课程</span>
+                                    <span>√高清视频</span>
+                                </div>
+                                <div class="info">
+                                    <span>√问答服务</span>
+                                    <span>√课程资料</span>
+                                </div>
+                            </div>
+                            <button>了解VIP 权益</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hot-lession">
+                <div class="lession {{hotCurrentPage === index ? 'lession-active' : ''}}" s-for="title, index in hotLessionTitles" on-mouseenter="changeHotLessionTitle(index)">
+                    <a href="#" title="{{title}}">{{title}}</a>
+                </div>
+            </div>
+            <div class="hot-lessionbox {{hotCurrentPage === i ? 'hot-lessionbox-active' : ''}}" s-for="_, i in hotLessionTitles">
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession1"></div>
+                        <h4>从Docker到CaaS(一)Docker集群管理介绍{{i}}</h4>
+                        <div class="infos">
+                            <span class="time">3课时 25分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession2"></div>
+                        <h4>Google IO 2015 大揭秘</h4>
+                        <div class="infos">
+                            <span class="time">4课时 20分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession3"></div>
+                        <h4>Android 项目开发实战：图案解锁</h4>
+                        <div class="infos">
+                            <span class="time">5课时 72分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession4"></div>
+                        <h4>iOS实战项目开发：团购之导航栏搜索城市功能</h4>
+                        <div class="infos">
+                            <span class="time">3课时 59分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession5"></div>
+                        <h4>Android项目开发实战：语音播报计算器拓展功能实现</h4>
+                        <div class="infos">
+                            <span class="time">3课时 54分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession6"></div>
+                        <h4>Cocos2d-x 小小打飞机项目开发实战</h4>
+                        <div class="infos">
+                            <span class="time">6课时 61分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession7"></div>
+                        <h4>WatchKit 的 Glance 和通知界面（上）</h4>
+                        <div class="infos">
+                            <span class="time">4课时 24分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-wrapper">
+                        <div class="background lession8"></div>
+                        <h4>GDC 2015 游戏开发者大会与 Unity 5.0 介绍</h4>
+                        <div class="infos">
+                            <span class="time">5课时 46分钟</span>
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectPath">
+                <h4>实战路径图</h4>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-wrapper">
+                            <img src="./img/android.png" alt="android" class="icon">
+                            <h5>Android路径图</h5>
+                            <p>
+                                <span>迅速账务核心知识</span>
+                                <span>提升自身竞争力</span>
+                                <span>成为Android开发高手</span>
+                            </p>
+                            <button>立即学习</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-wrapper">
+                            <img src="./img/android.png" alt="android" class="icon">
+                            <h5>ISO路径图</h5>
+                            <p>
+                                <span>课程讲解细致入微</span>
+                                <span>迅速将知识应用到实践中</span>
+                                <span>成为IOS开发工程师</span>
+                            </p>
+                            <button>立即学习</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-wrapper">
+                            <img src="./img/android.png" alt="android" class="icon">
+                            <h5>HTML5路径图</h5>
+                            <p>
+                                <span>由易到难的时间案例</span>
+                                <span>迅速掌握技术精髓</span>
+                                <span>成为HTML开发工程师</span>
+                            </p>
+                            <button>立即学习</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-wrapper">
+                            <img src="./img/android.png" alt="android" class="icon">
+                            <h5>Cocos2d-x路径图</h5>
+                            <p>
+                                <span>最小可执行单元</span>
+                                <span>学习节奏灵活掌握</span>
+                                <span>变身Cocos2d-x游戏开发工程师</span>
+                            </p>
+                            <button>立即学习</button>
+                        </div>
+                    </div>
+                    <div class="project no-open-project">
+                        <div class="project-wrapper">
+                            <img src="./img/android.png" alt="android" class="icon">
+                            <h5>Unity3D路径图</h5>
+                            <p>
+                                <span>精英海归布道师</span>
+                                <span>讲授国外最先进技术</span>
+                                <span>让你从“小白”一跃成为“大拿”</span>
+                            </p>
+                            <button>即将开始</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="system">
+                <h4>知识体系图</h4>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="back">
+                            <h4>719600人已学习</h4>
+                            <button>立即学习</button>
+                        </div>
+                        <div class="box-wrapper">
+                            <img src="./img/android.png" alt="android">
+                            <h5>Android</h5>
+                            <span>77门课程</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="enterprise">
+                <h4>战略合作企业</h4>
+                <div class="strategy">
+                    <div class="strategy-box">
+                        <img src="./img/microsoft.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/tengxun.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/chukong.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/557f8ff48f7d3.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/54d1d9f50e1af.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/keda.jpg" alt="microsoft">
+                    </div>
+                </div>
+            </div>
+            <div class="university">
+                <h4>合作院校</h4>
+                <div class="university-boxes">
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                    <div class="university-box">
+                        <img src="./img/53a2ae172128b.jpg" alt="北京邮电">
+                    </div>
+                </div>
+            </div>
+            <div class="enterprise">
+                <h4>媒体报道</h4>
+                <div class="strategy">
+                    <div class="strategy-box">
+                        <img src="./img/mt_1_42b5088.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/mt_2_28e84dd.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/mt_3_46bc154.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/mt_4_2376f75.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/mt_5_8427d73.jpg" alt="microsoft">
+                    </div>
+                    <div class="strategy-box">
+                        <img src="./img/mt_6_21a38b7.jpg" alt="microsoft">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+    const lessionMiddleWidth = 570;
+
+    export default {
+        initData() {
+            return {
+                currentPage: 0,
+                list: [0, 1, 2, 3, 4, 5],
+                hotCurrentPage: 0,
+                hotLists: [0, 1, 2, 3, 4],
+                hotLessionTitles: ['热门推荐', '最新课程', '免费课程', '项目实战', '全球首发', '企业合作']
+            }
+        },
+        goLessionMiddleLeft() {
+            let currentPage = this.data.get('currentPage');
+            currentPage = currentPage === 0 ? 5 : currentPage - 1;
+            this.moveLession(currentPage);
+        },
+        goLessionMiddleRight() {
+            let currentPage = this.data.get('currentPage');
+            currentPage = currentPage === 5 ? 0 : currentPage + 1;
+            this.moveLession(currentPage);
+        },
+        moveLession(current) {
+            this.ref('lessionMiddle').style.transform = `translate(-${lessionMiddleWidth * current}px, 0)`;
+            this.data.set('currentPage', current);
+        },
+        changeHotLessionTitle(index) {
+            this.data.set('hotCurrentPage', index);
+        }
+    }
+</script>
+<style>
+    .main {
+        nav {
+            height: 44px;
+            border-bottom: 1px solid #e8e8e8;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+            &>.nav-wrapper {
+                width: 960px;
+                margin: 0 auto;
+                &>a {
+                    display: inline-block;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 44px;
+                    color: #333;
+                }
+                &>.right {
+                    float: right;
+                    height: 44px;
+                    line-height: 44px;
+                    &>a {
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        padding-left: 24px;
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #333;
+                        margin-left: 20px;
+                        &.vip {
+                            background-image: url(./img/vip-icon_76ae754.png);
+                        }
+                        &.source {
+                            padding-left: 20px;
+                            background-size: auto 15px;
+                            background-image: url(./img/star-icon_c593bc1.png);
+                        }
+                        &.clients {
+                            padding-left: 20px;
+                            background-size: auto 15px;
+                            background-image: url(./img/dl-icon_4bc18a7.png);
+                        }
+                    }
+                }
+            }
+        }
+        section.pager {
+            width: 1000px;
+            margin: 30px auto 0;
+            font-family: Verdana, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Yahei',
+            Helvetica, arial, \5b8b\4f53, sans-serif;
+            &>.lession {
+                position: relative;
+                height: 307px;
+                font-size: 0;
+                &>.lession-left {
+                    position: relative;
+                    display: inline-block;
+                    width: 210px;
+                    height: 307px;
+                    &>.lists {
+                        border-top: 2px solid #35b558;
+                        border-left: 1px solid #e4e4e4;
+                        border-right: 1px solid #e4e4e4;
+                        &:hover {
+                            &>.list.hide {
+                                display: block;
+                            }
+                        }
+                        &>.list {
+                            height: 37px;
+                            line-height: 37px;
+                            font-size: 13px;
+                            background-color: #fff;
+                            &:hover>.lessionContainer {
+                                display: block;
+                            }
+                            &.hide {
+                                display: none;
+                            }
+                            &>a {
+                                display: block;
+                                padding-left: 15px;
+                                border-bottom: 1px solid #e4e4e4;
+                                text-decoration: none;
+                                color: #333;
+                            }
+                            &>.lessionContainer {
+                                display: none;
+                                position: absolute;
+                                width: 400px;
+                                height: 408px;
+                                top: 0;
+                                left: 210px;
+                                background-color: #fff;
+                                border: 1px solid #e4e4e4;
+                                z-index: 1;
+                                &>h4 {
+                                    padding-left: 15px;
+                                    border-bottom: 2px solid #e4e4e4;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                }
+                                &>.containerLists {
+                                    font-size: 0;
+                                    &>.containerList {
+                                        display: inline-block;
+                                        margin: 0 0 0 15px;
+                                        line-height: 34px;
+                                        font-size: 12px;
+                                        color: #333;
+                                        text-decoration: none;
+                                        &:hover {
+                                            color: #35b558;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &>.more {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 9px;
+                        background-color: #e4e4e4;
+                        z-index: -1;
+                        text-align: center;
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            border-top: 4px solid #000;
+                            border-left: 4px solid transparent;
+                            border-right: 4px solid transparent;
+                            vertical-align: -6px;
+                        }
+                    }
+                }
+                &>.lession-middle {
+                    position: relative;
+                    display: inline-block;
+                    width: 570px;
+                    height: 307px;
+                    margin-left: 5px;
+                    vertical-align: top;
+                    overflow: hidden;
+                    font-size: 0;
+                    &:hover {
+                        &>.left,
+                        &>.right {
+                            display: block;
+                        }
+                    }
+                    &>.lession-middle-wrapper {
+                        width: 3420px;
+                        transition: all 0.4s;
+                        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+                        &>.wrapper-info {
+                            display: inline-block;
+                            &>img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    &>.left,
+                    &>.right {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -10px;
+                        width: 30px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    &>.right {
+                        right: 0;
+                    }
+                    &>.bottom-wrapper {
+                        position: absolute;
+                        bottom: 20px;
+                        right: 0;
+                        left: 0;
+                        font-size: 0;
+                        text-align: center;
+                        &>.list {
+                            display: inline-block;
+                            width: 35px;
+                            height: 5px;
+                            border: 1px solid rgba(255, 255, 255, .8);
+                            border-radius: 2px;
+                            cursor: pointer;
+                            &+.list {
+                                margin-left: 10px;
+                            }
+                            &.active {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+                &>.lession-right {
+                    display: inline-block;
+                    height: 307px;
+                    vertical-align: top;
+                    &>.box {
+                        width: 212px;
+                        height: 50%;
+                        &>.box-wrapper {
+                            border-top: 1px solid #e4e4e4;
+                            border-right: 1px solid #e4e4e4;
+                            padding: 20px;
+                            &>h4 {
+                                font-size: 16px;
+                                font-weight: normal;
+                            }
+                            &>.infos {
+                                margin: 15px 0 15px;
+                                color: #35b558;
+                                font-size: 0px;
+                                &>span {
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    &+span:before {
+                                        content: '';
+                                        display: inline-block;
+                                        height: 12px;
+                                        border-left: 1px solid;
+                                        vertical-align: -3px;
+                                        margin: 0 10px;
+                                    }
+                                }
+                                &>.info {
+                                    font-size: 0;
+                                    &>span {
+                                        display: inline-block;
+                                        width: 50%;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            &>button {
+                                margin-top: 10px;
+                                width: 100%;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                background: #35b558;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                        }
+                        &:last-child {
+                            &>.box-wrapper {
+                                border-bottom: 1px solid #e4e4e4;
+                                &>.infos {
+                                    margin: 9px 0;
+                                }
+                                &>button {
+                                    margin-top: 0;
+                                    color: #35b558;
+                                    background: #f3fff6;
+                                    border: 1px solid #35b558;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+            &>.hot-lession {
+                height: 40px;
+                margin: 30px auto;
+                border-bottom: 1px solid;
+                color: #e4e4e4;
+                font-size: 0;
+                &>.lession {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 40px;
+                    width: 16.66667%;
+                    &>a {
+                        display: block;
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+            &>.hot-lessionbox {
+                display: none;
+                font-size: 0;
+                &.hot-lessionbox-active {
+                    display: block;
+                }
+                &>.box {
+                    position: relative;
+                    display: inline-block;
+                    width: 235px;
+                    height: 220px;
+                    margin-bottom: 20px;
+                    vertical-align: top;
+                    &:not(:nth-of-type(4n + 1)) {
+                        margin-left: 20px;
+                    }
+                    &>.box-wrapper {
+                        height: 100%;
+                        border: 1px solid #eee;
+                        &>.background {
+                            height: 130px;
+                            background-size: 100% auto;
+                            &.lession1 {
+                                background-image: url(./img/lession1.png);
+                            }
+                            &.lession2 {
+                                background-image: url(./img/lession2.png);
+                            }
+                            &.lession3 {
+                                background-image: url(./img/lession3.png);
+                            }
+                            &.lession4 {
+                                background-image: url(./img/lession4.png);
+                            }
+                            &.lession5 {
+                                background-image: url(./img/lession5.png);
+                            }
+                            &.lession6 {
+                                background-image: url(./img/lession6.png);
+                            }
+                            &.lession7 {
+                                background-image: url(./img/lession7.png);
+                            }
+                            &.lession8 {
+                                background-image: url(./img/lession8.png);
+                            }
+                        }
+                        &>h4 {
+                            padding: 10px;
+                            font-size: 15px;
+                            font-weight: normal;
+                            color: #000;
+                        }
+                        &>.infos {
+                            position: absolute;
+                            left: 10px;
+                            right: 10px;
+                            bottom: 5px;
+                            color: #888;
+                            &>.time {
+                                font-size: 12px;
+                                padding-left: 20px;
+                                background-image: url(./img/star-icon_c593bc1.png);
+                                background-repeat: no-repeat;
+                                background-position-y: -1px;
+                            }
+                            &>.icon {
+                                position: absolute;
+                                margin-top: 2px;
+                                right: 0;
+                                width: 12px;
+                                height: 12px;
+                                background-image: url(./img/ios.png);
+                                background-repeat: no-repeat;
+                                background-size: 12px 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            &>.projectPath {
+                margin-top: 50px;
+                &>h4 {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                &>.projects {
+                    font-size: 0;
+                    margin-bottom: 100px;
+                    &>.project {
+                        display: inline-block;
+                        width: 20%;
+                        text-align: center;
+                        &+.project>.project-wrapper {
+                            border-left: 1px solid transparent;
+                        }
+                        &:hover {
+                            &.no-open-project>.project-wrapper {
+                                &>button {
+                                    background-color: grey;
+                                    color: #fff;
+                                }
+                            }
+                            &>.project-wrapper {
+                                border: 1px solid #35b558;
+                                &>button {
+                                    background-color: #35b558;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        &.no-open-project>.project-wrapper {
+                            &>button {
+                                background-color: #e4e4e4;
+                                border: 1px solid;
+                                color: grey;
+                            }
+                        }
+                        &>.project-wrapper {
+                            padding: 30px 0;
+                            border: 1px solid #e4e4e4;
+                            &>.icon {
+                                width: 70px;
+                                height: 70px;
+                                margin-bottom: 24px;
+                            }
+                            &>h5 {
+                                font-size: 15px;
+                                font-weight: normal;
+                            }
+                            &>p {
+                                margin-top: 30px;
+                                &>span {
+                                    font-size: 12px;
+                                    display: block;
+                                    line-height: 20px;
+                                }
+                            }
+                            &>button {
+                                margin-top: 40px;
+                                padding: 0;
+                                width: 140px;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                color: #35b558;
+                                font-size: 16px;
+                                background: #f3fff6;
+                                border: 1px solid #35b558;
+                                outline: none;
+                                cursor: pointer;
+                                transition: all 0.8s;
+                            }
+                        }
+                    }
+                }
+            }
+            &>.system {
+                &>h4 {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                &>.boxes {
+                    margin-bottom: 100px;
+                    font-size: 0;
+                    color: #e4e4e4;
+                    border-bottom: 1px solid #e4e4e4;
+                    &>.box {
+                        position: relative;
+                        display: inline-block;
+                        width: 16.667%;
+                        text-align: center;
+                        color: #333;
+                        &:hover {
+                            &>.back {
+                                transform: rotateY(0deg);
+                            }
+                        }
+                        &:not(:nth-of-type(6n)) {
+                            &>.box-wrapper {
+                                border-right: none;
+                            }
+                        }
+                        &>.box-wrapper {
+                            padding: 15px 0;
+                            border: 1px solid #e4e4e4;
+                            border-bottom: none;
+                            &>img {
+                                width: 52px;
+                            }
+                            &>h5 {
+                                font-size: 14px;
+                            }
+                            &>span {
+                                font-size: 16px;
+                            }
+                        }
+                        &>.back {
+                            position: absolute;
+                            top: 1px;
+                            bottom: 1px;
+                            left: 1px;
+                            right: 1px;
+                            background-color: #f6f6f6;
+                            transform: rotateY(90deg);
+                            transition: all 0.4s;
+                            border: 1px solid transparent;
+                            &>h4 {
+                                padding-top: 25px;
+                                font-size: 16px;
+                            }
+                            &>button {
+                                margin-top: 20px;
+                                padding: 0;
+                                width: 140px;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                color: #35b558;
+                                font-size: 16px;
+                                background: #f3fff6;
+                                border: 1px solid #35b558;
+                                outline: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            &>.enterprise {
+                &>h4 {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                &>.strategy {
+                    font-size: 0;
+                    padding: 20px;
+                    border: 1px solid #e4e4e4;
+                    margin-bottom: 100px;
+                    &>.strategy-box {
+                        display: inline-block;
+                        border: 1px solid #e4e4e4;
+                        &+.strategy-box {
+                            margin-left: 10px;
+                        }
+                        &>img {
+                            width: 148px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+            &>.university {
+                &>h4 {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                &>.university-boxes {
+                    font-size: 0;
+                    padding: 20px;
+                    border: 1px solid #e4e4e4;
+                    margin-bottom: 100px;
+                    &>.university-box {
+                        display: inline-block;
+                        &+.university-box {
+                            margin-left: 30px;
+                        }
+                        &>img {
+                            width: 110px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

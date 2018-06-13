@@ -1,0 +1,230 @@
+<!--  -->
+<template>
+  <header>
+    <nav>
+      <div class="left">
+        <span class="location">重庆：</span>
+        <span class="weather">多云 26℃</span>
+        <span class="air">优 45</span>
+        <a href="#" class="list">宝箱</a>
+        <a href="#" class="list">换肤</a>
+        <a href="#" class="list">消息</a>
+      </div>
+      <div class="right">
+        <a class="list" href="#">糯米</a>
+        <a class="list" href="#">新闻</a>
+        <a class="list" href="#">hao123</a>
+        <a class="list" href="#">地图</a>
+        <a class="list" href="#">视频</a>
+        <a class="list" href="#">贴吧</a>
+        <a class="list" href="#">
+          <span>登陆</span>
+          <div class="menu">
+            <a href="#" title="我的VIP" class="menuList">我的VIP</a>
+            <a href="#" title="个人中心" class="menuList">个人中心</a>
+            <a href="#" title="账号设置" class="menuList">账号设置</a>
+            <a href="#" title="反馈意见" class="menuList">反馈意见</a>
+            <a href="#" title="退出" class="menuList">退出</a>            
+          </div>
+        </a>
+        <a class="list" href="#">
+          <span>设置</span>
+          <div class="menu">
+            <a href="#" title="搜索设置" class="menuList">搜索设置</a>
+            <a href="#" title="高级搜索" class="menuList">高级搜索</a>
+            <a href="#" title="开启预测" class="menuList">开启预测</a>
+            <a href="#" title="搜索历史" class="menuList">搜索历史</a>                       
+          </div>
+        </a>
+        <div class="list more" href="#">
+          <span>更多产品</span>
+          <div class="moreProduct">
+            <a href="#" title="糯米">
+              <img src="./moreproduct/nuomi_version1.png" alt="糯米">
+              <span>糯米</span>
+            </a>
+            <a href="#" title="知道">
+              <img src="./moreproduct/zhidao.png" alt="知道">
+              <span>知道</span>
+            </a>
+            <a href="#" title="音乐">
+              <img src="./moreproduct/music.png" alt="音乐">
+              <span>音乐</span>
+            </a>
+            <a href="#" title="图片">
+              <img src="./moreproduct/image.png" alt="图片">
+              <span>图片</span>
+            </a>
+            <a href="#" title="文库">
+              <img src="./moreproduct/wenku.png" alt="文库">
+              <span>文库</span>
+            </a>
+            <a href="#" title="风云榜">
+              <img src="./moreproduct/bang.png" alt="风云榜">
+              <span>风云榜</span>
+            </a>
+            <a href="#" title="百度推广">
+              <img src="./moreproduct/tuiguang.png" alt="百度推广">
+              <span>百度推广</span>
+            </a>
+            <a href="#" title="全部推广">全部推广>></a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+</template>
+
+<script>
+export default {}
+</script>
+<style>
+header {
+  margin: 3px 0 0;
+  & > nav {
+    text-align: justify;
+    height: 34px;
+    line-height: 34px;
+    font-size: 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-right: 15px;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+    & > .left,
+    & > .right {
+      display: inline-block;
+    }
+    & > .left {
+      font-size: 0;
+      color: #333;
+      & > .location {
+        display: inline-block;
+        margin-left: 15px;
+      }
+      & > .weather {
+        display: inline-block;
+        font-size: 13px;
+        padding-left: 24px;
+        background-image: url(./a1.jpg);
+        background-position: 0 5px;
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+      }
+      & > .air {
+        display: inline-block;
+        font-size: 13px;
+        color: #38f;
+        margin-left: 5px;
+        &:after {
+          content: '\3000';
+          display: inline-block;
+          margin-left: 5px;
+          border-left: 2px solid #000;
+          height: 15px;
+          font-size: 0;
+          background: #eee;
+          vertical-align: -4px;
+        }
+      }
+    }
+    & > .right {
+      & > .more {
+        &:hover > .moreProduct {
+          display: block;
+        }
+        & > .moreProduct {
+          display: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 86px;
+          height: 100%;
+          background-color: #f9f9f9;
+          border-left: 1px solid #e7e7e7;
+          z-index: 1;
+          & > a {
+            display: block;
+            margin: 10px auto;
+            width: 66px;
+            border-bottom: 1px solid #f0f0f0;
+            text-align: center;
+            text-decoration: none;
+            &:last-child {
+              width: 100%;
+              color: #666;
+            }
+            & > img {
+              margin: 5px auto 5px;
+              width: 36px;
+            }
+            & > span {
+              display: block;
+              font-size: 13px;
+              color: #666;
+            }
+          }
+        }
+      }
+      & > .list {
+        &:hover {
+          & > .menu {
+            display: block;
+          }
+        }
+        & > .menu {
+          display: none;
+          position: absolute;
+          margin: 5px 0 0 -20px;
+          width: 64px;
+          border: 1px solid #dedede;
+          box-shadow: 1px 1px 5px #dedede;
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            border: 5px solid transparent;
+            border-bottom-color: #d8d8d8;
+            margin: -10px 0 0 28px;
+          }
+          &:after {
+            margin: -9px 0 0 28px;
+            border-bottom-color: #fff;
+          }
+          & > .menuList {
+            display: block;
+            line-height: 26px;
+            font-size: 13px;
+            font-weight: normal;
+            color: #333;
+            background-color: #fff;
+            text-align: center;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .list {
+      display: inline-block;
+      color: #333;
+      font-weight: bold;
+      line-height: 24px;
+      margin-left: 20px;
+      font-size: 13px;
+      &.more {
+        color: white;
+        background: #38f;
+        line-height: 24px;
+        font-size: 13px;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+</style>

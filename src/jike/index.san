@@ -1,0 +1,23 @@
+<!-- index -->
+<template>
+    <div class="jike">
+        <m-header></m-header>
+        <main></main>
+        <m-footer></m-footer>
+    </div>
+</template>
+
+<script>
+    import mHeader from './header';
+    import main from './main.san';
+    import mFooter from './footer.san';
+    export default {
+        components: {
+            'm-header': mHeader,
+            'main': main,
+            'm-footer': mFooter
+        }
+    }
+</script>
+<style module>
+</style>

@@ -1,0 +1,130 @@
+<!--  -->
+<template>
+    <header>
+        <div class="header-main">
+            <h1>
+                <a href="#" title="jike">
+                    <img src="./img/logo_c8caff4.png" alt="jike">
+                </a>
+            </h1>
+            <form action="#">
+                <input type="text" class="search">
+                <input type="submit" value="">
+                <div class="hot-search">
+                    <span>Android</span>
+                    <span>IOS</span>
+                    <span>HTML5</span>
+                </div>
+            </form>
+            <div class="loginbox">
+                <a href="#" class="course">我的课程</a>
+                <span>|</span>
+                <a href="#" class="vip">
+                    <img src="./img/vip-year_3ecca1f.png" alt="vip">
+                </a>
+                <a href="#" class="usermenu">alex</a>
+                <a href="#" class="change">[修改]</a>
+            </div>
+        </div>
+    </header>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
+<style>
+    header {
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        color: #35b558;
+        &>.header-main {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            &>h1 {
+                float: left;
+                &>a {
+                    &>img {
+                        width: 113px;
+                        height: 41px;
+                    }
+                }
+            }
+            &>form {
+                display: inline-block;
+                font-size: 0;
+                border: 1px solid;
+                color: #dfdfdf;
+                width: 380px;
+                height: 38px;
+                text-align: left;
+                position: relative;
+                &>.searchBox {
+                    display: inline-block;
+                    width: 339px;
+                    height: 100%;
+                    vertical-align: top;
+                    border-right: 1px solid #dfdfdf;
+                }
+                &>.search {
+                    border: none;
+                    padding: 0 0 0 5px;
+                    outline: none;
+                    font-size: 23px;
+                    text-align: left;
+                    width: 330px;
+                    height: 100%;
+                    vertical-align: top;
+                    border-right: 1px solid #dfdfdf;
+                }
+                &>.hot-search {
+                    position: absolute;
+                    top: 10px;
+                    right: 50px;
+                    height: 38px;
+                    &>span {
+                        background-color: #f3f3f3;
+                        color: gray;
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                }
+                &>input[type="submit"] {
+                    display: inline-block;
+                    height: 38px;
+                    width: 40px;
+                    padding: 0;
+                    outline: none;
+                    border: none;
+                    background-image: url(./img/topsearch-icon_e1f5df2.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+            }
+            &>.loginbox {
+                float: right;
+                height: 50px;
+                line-height: 50px;
+                font-size: 12px;
+                &>a {
+                    color: #333;
+                    text-decoration: none;
+                    &.vip {
+                        &>img {
+                            position: relative;
+                            top: 3px;
+                            width: 50px;
+                            height: 15px;
+                        }
+                    }
+                    &.change {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+</style>
