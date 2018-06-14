@@ -1,0 +1,162 @@
+<!-- tab -->
+<template>
+    <div class="tab">
+        <input type="radio" name="tab" id="first" checked>
+        <label for="first">HOW BUYING WORKS</label>
+        <input type="radio" name="tab" id="second">
+        <label for="second">HOW SELLING WORKS</label>
+        <div class="tab-body tab-first">
+            <span>1</span>
+        </div>
+        <div class="tab-body tab-second">
+            <span>2</span>
+        </div>
+        <div class="tabs">
+            <ol data-role="tabs-nav">
+                <li>how buying works</li>
+                <li>how selling works</li>
+            </ol>
+            <ol data-role="tabs-panes">
+                <li>
+                    <div class="circle">1</div>
+                </li>
+                <li>
+                    <div class="circle">2</div>
+                </li>
+            </ol>
+        </div>
+    </div>
+</template>
+
+<script>
+    import tabs from './index.js';
+    export default {
+        // 组件已被附加到页面中
+        attached() {
+            const tabElement = Object.create(tabs);
+            tabElement.init({
+                element: document.querySelectorAll('.tabs')[0]
+            });
+        }
+    }
+</script>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        background: #E2DED2;
+    }
+
+    .tab {
+        margin: 30px auto;
+        width: 400px;
+        padding: 8px;
+        width: 460px;
+        border: 1px solid #CBC7BC;
+        border-radius: 6px;
+        font-size: 0;
+        &>input {
+            display: none;
+            &:checked {
+                &+label {
+                    background: linear-gradient(to bottom, white 0%, #F0EDE6 100%);
+                    color: #222222;
+                    box-shadow: none;
+                }
+                &#first~.tab-first {
+                    display: block;
+                }
+                &#second~.tab-second {
+                    display: block;
+                }
+            }
+        }
+        &>label {
+            display: inline-block;
+            width: 50%;
+            font-size: 18px;
+            text-align: center;
+            line-height: 60px;
+            color: #847E6F;
+            background: linear-gradient(to bottom, #e5dfd3 0%, #d0c9b8 100%);
+            text-shadow: 1px 1px 1px white;
+            box-shadow: inset 0 0 2px hsla(0, 0%, 0%, 0.15);
+        }
+        &>.tab-body {
+            display: none;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: 1px solid #B8B3AE;
+            border-top: none;
+            background: #F0EDE6;
+            &>span {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                background-color: #f8f8f8;
+                font-size: 16px;
+            }
+        }
+        &>.tabs {
+            background: #F2F1EC;
+            &>ol {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                &:first-child {
+                    display: flex;
+                    border: 1px solid #b8b3ae;
+                    border-bottom: none;
+                    &>li {
+                        flex-grow: 1;
+                        padding: 20px;
+                        text-align: center;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        background: linear-gradient(to bottom, #e5dfd3 0%, #d0c9b8 100%);
+                        color: #847E6F;
+                        text-shadow: 1px 1px 1px white;
+                        box-shadow: inset 0 0 2px hsla(0, 0%, 0%, 0.15);
+                        &.active {
+                            background: linear-gradient(to bottom, white 0%, #F0EDE6 100%);
+                            color: #222222;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    border: 1px solid #B8B3AE;
+                    border-top: none;
+                    background: #F0EDE6;
+                    &>li {
+                        display: none;
+                        min-height: 5em;
+                        &.active {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #DFDCD3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: #333;
+            margin: 5em 0;
+        }
+    }
+</style>

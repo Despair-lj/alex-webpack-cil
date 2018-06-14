@@ -272,12 +272,15 @@
                 </div>
             </div>
             <div class="hot-lessionbox {{hotCurrentPage === i ? 'hot-lessionbox-active' : ''}}" s-for="_, i in hotLessionTitles">
-                <div class="box">
+                <div class="box" on-transitionend="transitionEnd" on-mouseenter="boxIndex">
                     <div class="box-wrapper">
                         <div class="background lession1"></div>
                         <h4>从Docker到CaaS(一)Docker集群管理介绍{{i}}</h4>
+                        <h5>本课时主要讲解网站建设的基础知识，并结合实例让学员快速了解网站的构架以及网站是如何建成的。</h5>
                         <div class="infos">
                             <span class="time">3课时 25分钟</span>
+                            <span class="learnNumber">2154人学习</span>
+                            <span class="level">初级</span>
                             <span class="icon"></span>
                         </div>
                     </div>
@@ -286,8 +289,11 @@
                     <div class="box-wrapper">
                         <div class="background lession2"></div>
                         <h4>Google IO 2015 大揭秘</h4>
+                        <h5>本课时主要讲解网站建设的基础知识，并结合实例让学员快速了解网站的构架以及网站是如何建成的。</h5>
                         <div class="infos">
                             <span class="time">4课时 20分钟</span>
+                            <span class="learnNumber">2154人学习</span>
+                            <span class="level">初级</span>
                             <span class="icon"></span>
                         </div>
                     </div>
@@ -690,24 +696,70 @@
             <div class="enterprise">
                 <h4>战略合作企业</h4>
                 <div class="strategy">
-                    <div class="strategy-box">
-                        <img src="./img/microsoft.jpg" alt="microsoft">
+                    <div class="strategy-wrapper">
+                        <div class="strategy-box">
+                            <img src="./img/chukong.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/557f8ff48f7d3.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/54d1d9f50e1af.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/keda.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/55d2fa95ecda8.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/55d2fd0080bfa.png" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/microsoft.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/tengxun.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/chukong.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/557f8ff48f7d3.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/54d1d9f50e1af.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/keda.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/55d2fa95ecda8.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/55d2fd0080bfa.png" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/microsoft.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/tengxun.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/chukong.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/557f8ff48f7d3.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/54d1d9f50e1af.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/keda.jpg" alt="microsoft">
+                        </div>
                     </div>
-                    <div class="strategy-box">
-                        <img src="./img/tengxun.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/chukong.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/557f8ff48f7d3.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/54d1d9f50e1af.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/keda.jpg" alt="microsoft">
-                    </div>
+                    <div class="left" on-click="goStrategyLeft">&#65308;</div>
+                    <div class="right" on-click="goStrategyRight">&#65310;</div>
                 </div>
             </div>
             <div class="university">
@@ -739,32 +791,38 @@
             <div class="enterprise">
                 <h4>媒体报道</h4>
                 <div class="strategy">
-                    <div class="strategy-box">
-                        <img src="./img/mt_1_42b5088.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/mt_2_28e84dd.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/mt_3_46bc154.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/mt_4_2376f75.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/mt_5_8427d73.jpg" alt="microsoft">
-                    </div>
-                    <div class="strategy-box">
-                        <img src="./img/mt_6_21a38b7.jpg" alt="microsoft">
+                    <div class="strategy-wrapper" style="transform: translate(0px, 0)">
+                        <div class="strategy-box">
+                            <img src="./img/mt_1_42b5088.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/mt_2_28e84dd.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/mt_3_46bc154.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/mt_4_2376f75.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/mt_5_8427d73.jpg" alt="microsoft">
+                        </div>
+                        <div class="strategy-box">
+                            <img src="./img/mt_6_21a38b7.jpg" alt="microsoft">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="topBack">
+                <span class="follow">
+                </span>
             </div>
         </section>
     </div>
 </template>
 
 <script>
-    const lessionMiddleWidth = 570;
+    const lessionMiddleWidth = 570
 
     export default {
         initData() {
@@ -772,26 +830,95 @@
                 currentPage: 0,
                 list: [0, 1, 2, 3, 4, 5],
                 hotCurrentPage: 0,
-                hotLists: [0, 1, 2, 3, 4],
-                hotLessionTitles: ['热门推荐', '最新课程', '免费课程', '项目实战', '全球首发', '企业合作']
+                hotLessionTitles: [
+                    '热门推荐',
+                    '最新课程',
+                    '免费课程',
+                    '项目实战',
+                    '全球首发',
+                    '企业合作'
+                ],
+                enterprise: [{
+                        name: 'microsoft',
+                        img: './img/microsoft.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/tengxun.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/chukong.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/tengxun.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/557f8ff48f7d3.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/54d1d9f50e1af.jpg'
+                    },
+                    {
+                        name: 'microsoft',
+                        img: './img/keda.jpg'
+                    }
+                ],
+                strategyCurrentPage: 0
             }
         },
         goLessionMiddleLeft() {
-            let currentPage = this.data.get('currentPage');
-            currentPage = currentPage === 0 ? 5 : currentPage - 1;
-            this.moveLession(currentPage);
+            let currentPage = this.data.get('currentPage')
+            currentPage = currentPage === 0 ? 5 : currentPage - 1
+            this.moveLession(currentPage)
         },
         goLessionMiddleRight() {
-            let currentPage = this.data.get('currentPage');
-            currentPage = currentPage === 5 ? 0 : currentPage + 1;
-            this.moveLession(currentPage);
+            let currentPage = this.data.get('currentPage')
+            currentPage = currentPage === 5 ? 0 : currentPage + 1
+            this.moveLession(currentPage)
         },
         moveLession(current) {
-            this.ref('lessionMiddle').style.transform = `translate(-${lessionMiddleWidth * current}px, 0)`;
-            this.data.set('currentPage', current);
+            this.ref(
+                'lessionMiddle'
+            ).style.transform = `translate(-${lessionMiddleWidth * current}px, 0)`
+            this.data.set('currentPage', current)
         },
         changeHotLessionTitle(index) {
-            this.data.set('hotCurrentPage', index);
+            this.data.set('hotCurrentPage', index)
+        },
+        transitionEnd(e) {
+            if (e.target.offsetHeight === 0) {
+                e.path.map(function (item, index, array) {
+                    if (item.className === 'box') {
+                        item.style['zIndex'] = 0
+                    }
+                })
+            }
+        },
+        boxIndex(e) {
+            e.target.style['zIndex'] = 1
+        },
+        goStrategyLeft() {
+            const boxes = document.querySelector('.strategy-wrapper');
+            const width = 160;
+            const currentPage = this.data.get('strategyCurrentPage');
+            console.log(currentPage);
+            const nextCurrentPage = (currentPage >= 6 ? -2 : currentPage) + 1;
+            const left = -960 + width * nextCurrentPage;
+            boxes.style.transform = `translate(${left}px, 0)`;
+            this.data.set('strategyCurrentPage', nextCurrentPage);
+        },
+        goStrategyRight() {
+            const boxes = document.querySelector('.strategy-wrapper');
+            const width = 160;
+            const currentPage = this.data.get('strategyCurrentPage');
+            const nextCurrentPage = (currentPage <= 0 ? 5 : currentPage) - 1;
+            const left = -960 + width * nextCurrentPage;
+            boxes.style.transform = `translate(${left}px, 0)`;
+            this.data.set('strategyCurrentPage', nextCurrentPage);
         }
     }
 </script>
@@ -991,7 +1118,7 @@
                             display: inline-block;
                             width: 35px;
                             height: 5px;
-                            border: 1px solid rgba(255, 255, 255, .8);
+                            border: 1px solid rgba(255, 255, 255, 0.8);
                             border-radius: 2px;
                             cursor: pointer;
                             &+.list {
@@ -1069,9 +1196,7 @@
                                     background: #f3fff6;
                                     border: 1px solid #35b558;
                                 }
-
                             }
-
                         }
                     }
                 }
@@ -1105,15 +1230,28 @@
                     position: relative;
                     display: inline-block;
                     width: 235px;
-                    height: 220px;
+                    height: 230px;
                     margin-bottom: 20px;
                     vertical-align: top;
                     &:not(:nth-of-type(4n + 1)) {
                         margin-left: 20px;
                     }
+                    &:hover {
+                        &>.box-wrapper {
+                            &>h5 {
+                                height: 60px;
+                            }
+                            &>.infos {
+                                &>.learnNumber,
+                                &>.level {
+                                    height: 18px;
+                                }
+                            }
+                        }
+                    }
                     &>.box-wrapper {
-                        height: 100%;
                         border: 1px solid #eee;
+                        background-color: #fff;
                         &>.background {
                             height: 130px;
                             background-size: 100% auto;
@@ -1143,28 +1281,55 @@
                             }
                         }
                         &>h4 {
+                            height: 50px;
                             padding: 10px;
                             font-size: 15px;
                             font-weight: normal;
                             color: #000;
                         }
+                        h5 {
+                            padding: 0 10px;
+                            height: 0px;
+                            font-size: 12px;
+                            font-weight: normal;
+                            color: #333;
+                            overflow: hidden;
+                            transition: height 0.3s ease-in;
+                        }
                         &>.infos {
-                            position: absolute;
-                            left: 10px;
-                            right: 10px;
-                            bottom: 5px;
+                            position: relative;
+                            padding: 0 10px 10px;
                             color: #888;
+                            font-size: 0;
+                            text-align: justify;
                             &>.time {
+                                display: inline-block;
                                 font-size: 12px;
                                 padding-left: 20px;
                                 background-image: url(./img/star-icon_c593bc1.png);
                                 background-repeat: no-repeat;
                                 background-position-y: -1px;
+                                vertical-align: bottom;
+                            }
+                            &>.learnNumber {
+                                display: inline-block;
+                                height: 0px;
+                                font-size: 12px;
+                                overflow: hidden;
+                                transition: height 0.3s ease-in;
+                            }
+                            &>.level {
+                                display: inline-block;
+                                width: 100%;
+                                font-size: 12px;
+                                height: 0px;
+                                overflow: hidden;
+                                transition: height 0.3s ease-in;
                             }
                             &>.icon {
                                 position: absolute;
-                                margin-top: 2px;
-                                right: 0;
+                                bottom: 10px;
+                                right: 10px;
                                 width: 12px;
                                 height: 12px;
                                 background-image: url(./img/ios.png);
@@ -1337,17 +1502,45 @@
                     padding: 20px;
                     border: 1px solid #e4e4e4;
                     margin-bottom: 100px;
-                    &>.strategy-box {
-                        display: inline-block;
-                        border: 1px solid #e4e4e4;
-                        &+.strategy-box {
-                            margin-left: 10px;
-                        }
-                        &>img {
-                            width: 148px;
-                            height: 48px;
+                    position: relative;
+                    overflow: hidden;
+                    &>.left,
+                    &>.right {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -20px;
+                        width: 30px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    &>.right {
+                        left: auto;
+                        right: 0;
+                    }
+                    &>.strategy-wrapper {
+                        width: 3200px;
+                        transform: translate(-960px, 0);
+                        transition: all 0.3s ease-in;
+                        &>.strategy-box {
+                            display: inline-block;
+                            border: 1px solid #e4e4e4;
+                            &+.strategy-box {
+                                margin-left: 10px;
+                            }
+                            &>img {
+                                width: 148px;
+                                height: 48px;
+                            }
                         }
                     }
+
                 }
             }
             &>.university {
@@ -1371,6 +1564,25 @@
                             height: 110px;
                         }
                     }
+                }
+            }
+            &>.topBack {
+                height: 0;
+                overflow: hidden;
+                text-align: right;
+                &:before {
+                    content: '\2002';
+                }
+                &>.follow {
+                    position: fixed;
+                    bottom: 100px;
+                    margin-left: 10px;
+                    z-index: 1;
+                    height: 34px;
+                    width: 34px;
+                    background: url(./img/gotop_d19051b.jpg) no-repeat;
+                    background-size: 34px 103px;
+                    background-color: #f7f7f7;
                 }
             }
         }

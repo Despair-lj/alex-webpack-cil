@@ -7,11 +7,12 @@
 // import qdjj from './qdjj/index.san';
 // import threeD from './threeD/index.san';
 // import runningCar from './runningCar/index.san';
-import jike from './jike/index.san';
+// import jike from './jike/index.san';
 // import classification from './classification/index.san';
 // import calc from './calc/index.san';
 // import findChar from './findChar/index.san';
 // import calc from './calc/indexUpdate.san';
+import tab from './tab/index.san';
 
 import {
     router
@@ -21,7 +22,7 @@ require('./main.css');
 
 router.add({
     rule: '/',
-    Component: jike,
+    Component: tab,
     target: '#app'
 });
 
